@@ -7,7 +7,9 @@
 
 // Desktops & Laptops
 @include mediaLg {
-  grid-template-columns: repeat(3, 1fr);
+   .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 // Tablets & Small Laptops
