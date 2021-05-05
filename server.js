@@ -71,7 +71,7 @@ app.get("/contact", (req, res) => {
 
 // @desc Resume full view
 // @route GET /full-view
-app.get("/resume-full-view", (req, res) => {
+app.get("/godfrey-samuel-cv", (req, res) => {
   const item = "./frontend/static/GodfreySam-CV.pdf";
   if (fs.existsSync(item)) {
     res.contentType("application/pdf");
