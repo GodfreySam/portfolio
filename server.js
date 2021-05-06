@@ -83,24 +83,41 @@ let transporter = nodemailer.createTransport(smtpTransport({
 }));
 
 app.post("/mail", (req, res)=> {
-
-  let name = req.body.Name;
-  let email = req.body.Email;
-  let message = req.body.Message;
-
+  
   const mailOptions = {
     from: process.env.MAIL_USER,
     to: process.env.MAIL_USER,
     subject: "From Portfolio Contact Form",
-    text: `From: ${name} Email: <${email}> \n${message}`,
+    text: `
+      From: ${req.body.name}
+      Email: ${req.body.email} \n \n
+      ${req.body.message}`,
   };
 
   transporter.sendMail(mailOptions, function(err, info) {
     if(err) {
       console.log(err);
-      res.status(500).send("something went wrong.");
+      res.status(500).send(`
+       <div style="padding-top:10rem; justify-content:center;
+        align-item:center; text-align:center; text-decoration:none;
+        font-family:Arial; font-weight:bold;
+       ">
+       Message not sent
+        <br><button class="btn anchor">
+              <a href="/contact">Retry</a>
+            </button>
+       `);
     } else {
-      res.status(200).send("Message sent");
+      res.status(200).send(`
+       <div style="padding-top:10rem; justify-content:center;
+        align-item:center; text-align:center; text-decoration:none;
+        font-family:Arial; font-weight:bold;
+       ">
+       Message sent, thanks for getting in touch
+        <br><button class="btn anchor">
+              <a href="/">Back</a>
+            </button>
+       `);
     }
   })
 });
