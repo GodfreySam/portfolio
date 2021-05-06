@@ -94,15 +94,6 @@ let transporter = nodemailer.createTransport(smtpTransport({
   },
 }));
 
-// verify connection configuration
-transporter.verify(function (error, success) {
-  if (error) {
-    console.log(error);
-  } else {
-    console.log("Server is ready to take our messages");
-  }
-});
-
 app.post("/mail", (req, res)=> {
 
   let form = new multiparty.Form();
@@ -115,22 +106,16 @@ app.post("/mail", (req, res)=> {
     })
   });
 
-  // let name = req.body.Name;
-  // let email = req.body.Email;
-  // let message = req.body.Message;
-
   const mailOptions = {
     from: process.env.MAIL_USER,
     to: process.env.MAIL_USER,
     subject: "From Portfolio Contact Form",
     text: `
       From: ${data.Name} 
-      Email: <${data.Email}> 
-      \n${data.Message}
+      \n Email: <${data.Email}> 
+      \n ${data.Message}
       `,
   };
-
-  console.log(mailOptions);
 
   transporter.sendMail(mailOptions, function(err, info) {
     if(err) {
