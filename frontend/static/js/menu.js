@@ -40,3 +40,9 @@ function closeOverlay() {
 
   showMenu = false;
 }
+
+document.querySelectorAll(".btn-dismiss").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    document.querySelector(".card-alert").style.display = none;
+  });
+});
