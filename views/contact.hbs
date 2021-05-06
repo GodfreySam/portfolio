@@ -34,7 +34,7 @@
   });
 
   const sendMail = (mail) => {
-    fetch("https://godfreys-portfolio.herokuapp.com/mail", {
+    fetch("/mail", {
       method: "post",
       body: mail,
     }).then((response) => {
