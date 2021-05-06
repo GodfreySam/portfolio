@@ -1,13 +1,10 @@
 const express = require("express");
-const session = require('express-session')
 const path = require("path");
 const nodemailer= require("nodemailer");
 const dotenv = require("dotenv");
 const exphbs = require("express-handlebars");
 const fs = require("fs");
-const multiparty = require("multiparty");
 var smtpTransport = require("nodemailer-smtp-transport");
-const { property } = require("underscore");
 
 // Load config
 dotenv.config({ path: "./config/config.env" });
@@ -28,15 +25,6 @@ app.engine(
 );
 
 app.set("view engine", ".hbs");
-
-// express sessions
-app.use(
-  session({
-    secret: "keyboard cat",
-    resave: false,
-    saveUninitialized: false,
-  })
-);
 
 // Static folder
 app.use(express.static(path.join(__dirname, "frontend")));
@@ -96,25 +84,15 @@ let transporter = nodemailer.createTransport(smtpTransport({
 
 app.post("/mail", (req, res)=> {
 
-  let form = new multiparty.Form();
-  let data = {};
-
-  form.parse(req, (err, fields) => {
-    console.log(fields);
-    Object.keys(fields).forEach(property => {
-      data[property] = fields[property].toString();
-    })
-  });
+  let name = req.body.Name;
+  let email = req.body.Email;
+  let message = req.body.Message;
 
   const mailOptions = {
     from: process.env.MAIL_USER,
     to: process.env.MAIL_USER,
     subject: "From Portfolio Contact Form",
-    text: `
-      From: ${data.Name} 
-      \n Email: <${data.Email}> 
-      \n ${data.Message}
-      `,
+    text: `From: ${name} Email: <${email}> \n${message}`,
   };
 
   transporter.sendMail(mailOptions, function(err, info) {

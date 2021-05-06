@@ -21,24 +21,3 @@
     </div>
   </div>
 </main>
-
-<script>
-  const form = document.querySelector('#contact-form');
-
-  const formEvent = form.addEventListener("submit", (e) =>{
-    e.preventDefault();
-
-    let mail = new FormData(form);
-
-    sendMail(mail);
-  });
-
-  const sendMail = (mail) => {
-    fetch("/mail", {
-      method: "post",
-      body: mail,
-    }).then((response) => {
-      return response.json();
-    })
-  }
-</script>
