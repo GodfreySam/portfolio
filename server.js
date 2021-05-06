@@ -4,12 +4,15 @@ const nodemailer= require("nodemailer");
 const dotenv = require("dotenv");
 const exphbs = require("express-handlebars");
 const fs = require("fs");
-var smtpTransport = require("nodemailer-smtp-transport");
+const cors = require("cors");
+const multiparty = require("multiparty");
 
 // Load config
 dotenv.config({ path: "./config/config.env" });
 
 const app = express();
+
+app.use(cors({ origin: "*" }));
 
 // Body parser
 app.use(express.json());
@@ -72,32 +75,43 @@ app.get("/godfrey-samuel-cv", (req, res) => {
   }
 });
 
-let transporter = nodemailer.createTransport(smtpTransport({
+const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
   port: 465,
-  secure: true,
   auth: {
     user: process.env.MAIL_USER,
     pass: process.env.MAIL_PASSWORD,
   },
-}));
+});
 
 app.post("/mail", (req, res)=> {
   
-  const mailOptions = {
-    from: process.env.MAIL_USER,
-    to: process.env.MAIL_USER,
-    subject: "From Portfolio Contact Form",
-    text: `
-      From: ${req.body.name}
-      Email: ${req.body.email} \n \n
-      ${req.body.message}`,
-  };
+  let form = new multiparty.Form();
+  let data = {};
+  form.parse(req, function (err, fields) {
+    console.log(fields);
+    Object.keys(fields).forEach(function (property) {
+      data[property] = fields[property].toString();
+    });
 
-  transporter.sendMail(mailOptions, function(err, info) {
-    if(err) {
-      console.log(err);
-      res.status(500).send(`
+    console.log(data)
+
+    const mailOptions = {
+      from: data.name,
+      to: process.env.MAIL_USER,
+      subject: "From Portfolio",
+      text: `
+      From: ${data.name}
+      Email: ${data.email} \n \n
+      ${data.message}`,
+    };
+
+    console.log(mailOptions)
+    
+    transporter.sendMail(mailOptions, function (err, info) {
+      if (err) {
+        console.log(err);
+        res.status(500).send(`
        <div style="padding-top:10rem; justify-content:center;
         align-item:center; text-align:center; text-decoration:none;
         font-family:Arial; font-weight:bold;
@@ -107,8 +121,8 @@ app.post("/mail", (req, res)=> {
               <a href="/contact">Retry</a>
             </button>
        `);
-    } else {
-      res.status(200).send(`
+      } else {
+        res.status(200).send(`
        <div style="padding-top:10rem; justify-content:center;
         align-item:center; text-align:center; text-decoration:none;
         font-family:Arial; font-weight:bold;
@@ -118,7 +132,8 @@ app.post("/mail", (req, res)=> {
               <a href="/">Back</a>
             </button>
        `);
-    }
+      }
+    });
   })
 });
 
