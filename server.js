@@ -1,6 +1,8 @@
 const express = require("express");
 const path = require("path");
 const nodemailer= require("nodemailer");
+const flash = require("connect-flash");
+const session = require("express-session");
 const dotenv = require("dotenv");
 const exphbs = require("express-handlebars");
 const fs = require("fs");
@@ -22,12 +24,43 @@ app.use(express.urlencoded({ extended: true }));
 app.engine(
   ".hbs",
   exphbs({
+    helpers: {
+      successMsg: function (msg) {
+        if (typeof msg != "") {
+          return msg;
+        }
+      },
+      errorMsg: function (msg) {
+        if (typeof msg != "") {
+          return msg;
+        }
+      },
+    },
     defaultLayout: "index",
     extname: ".hbs",
   })
 );
 
 app.set("view engine", ".hbs");
+
+// express sessions
+app.use(
+  session({
+    secret: "keyboard cat",
+    resave: false,
+    saveUninitialized: false,
+  })
+);
+
+// Connect flash
+app.use(flash());
+
+// Set global variables
+app.use(function (req, res, next) {
+  res.locals.success_msg = req.flash("success_msg");
+  res.locals.error_msg = req.flash("error_msg");
+  next();
+});
 
 // Static folder
 app.use(express.static(path.join(__dirname, "frontend")));
@@ -89,12 +122,9 @@ app.post("/mail", (req, res)=> {
   let form = new multiparty.Form();
   let data = {};
   form.parse(req, function (err, fields) {
-    console.log(fields);
     Object.keys(fields).forEach(function (property) {
       data[property] = fields[property].toString();
     });
-
-    console.log(data)
 
     const mailOptions = {
       from: data.name,
@@ -106,32 +136,17 @@ app.post("/mail", (req, res)=> {
       ${data.message}`,
     };
 
-    console.log(mailOptions)
-    
     transporter.sendMail(mailOptions, function (err, info) {
       if (err) {
         console.log(err);
-        res.status(500).send(`
-       <div style="padding-top:10rem; justify-content:center;
-        align-item:center; text-align:center; text-decoration:none;
-        font-family:Arial; font-weight:bold;
-       ">
-       Message not sent
-        <br><button class="btn anchor">
-              <a href="/contact">Retry</a>
-            </button>
-       `);
+        req.flash("error_msg", ["Message not sent", "kindly retry"]);
+        res.redirect('/contact');
       } else {
-        res.status(200).send(`
-       <div style="padding-top:10rem; justify-content:center;
-        align-item:center; text-align:center; text-decoration:none;
-        font-family:Arial; font-weight:bold;
-       ">
-       Message sent, thanks for getting in touch
-        <br><button class="btn anchor">
-              <a href="/">Back</a>
-            </button>
-       `);
+        req.flash("success_msg", [
+          "Message sent",
+          "thanks for getting in touch",
+        ]);
+        res.redirect('/');
       }
     });
   })

@@ -1,0 +1,29 @@
+
+{{#if success_msg}}
+<div class="card-alert card green lighten-5">
+  <div class="card-content green-text">
+    {{successMsg success_msg }}
+  </div>
+  <button type="button" class="close green-text" data-dismiss="alert" aria-label="close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+{{/if}}
+
+{{#if error_msg}}
+<div class="card-alert">
+  <div class="card-content">
+    {{errorMsg error_msg}}
+  </div>
+  <button type="button" class="btn-dismiss" data-dismiss="alert" aria-label="close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<script>
+  document.querySelectorAll(".btn-dismiss").forEach(btn => {
+    btn.addEventListener("click", ()=> {
+      document.querySelector(".card-alert").style.display = none;
+    })
+  })
+</script>
