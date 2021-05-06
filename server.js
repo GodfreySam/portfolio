@@ -5,7 +5,9 @@ const nodemailer= require("nodemailer");
 const dotenv = require("dotenv");
 const exphbs = require("express-handlebars");
 const fs = require("fs");
+const multiparty = require("multiparty");
 var smtpTransport = require("nodemailer-smtp-transport");
+const { property } = require("underscore");
 
 // Load config
 dotenv.config({ path: "./config/config.env" });
@@ -83,25 +85,49 @@ app.get("/godfrey-samuel-cv", (req, res) => {
 });
 
 let transporter = nodemailer.createTransport(smtpTransport({
-  service: "gmail",
   host: "smtp.gmail.com",
+  port: 465,
+  secure: true,
   auth: {
     user: process.env.MAIL_USER,
     pass: process.env.MAIL_PASSWORD,
   },
 }));
 
+// verify connection configuration
+transporter.verify(function (error, success) {
+  if (error) {
+    console.log(error);
+  } else {
+    console.log("Server is ready to take our messages");
+  }
+});
+
 app.post("/mail", (req, res)=> {
 
-  let name = req.body.Name;
-  let email = req.body.Email;
-  let message = req.body.Message;
+  let form = new multiparty.Form();
+  let data = {};
+
+  form.parse(req, (err, fields) => {
+    console.log(fields);
+    Object.keys(fields).forEach(property => {
+      data[property] = fields[property].toString();
+    })
+  });
+
+  // let name = req.body.Name;
+  // let email = req.body.Email;
+  // let message = req.body.Message;
 
   const mailOptions = {
-    from: email,
+    from: process.env.MAIL_USER,
     to: process.env.MAIL_USER,
     subject: "From Portfolio Contact Form",
-    text: `${name} <${email}> \n${message}`,
+    text: `
+      From: ${data.Name} 
+      Email: <${data.Email}> 
+      \n${data.Message}
+      `,
   };
 
   console.log(mailOptions);

@@ -3,7 +3,7 @@
     <div class="contact-container">
       <h1 class="lg-heading">Contact</h1>
       <p class="w3-opacity">GET IN TOUCH</p>
-      <form autocomplete="off" action="/mail" method="POST">
+      <form id="contact-form" enctype="multipart/form-data" autocomplete="off" action="/mail" method="POST">
         <div class="">
           <label>Name</label>
           <input class="" type="text" required name="Name">
@@ -21,3 +21,24 @@
     </div>
   </div>
 </main>
+
+<script>
+  const form = document.querySelector('#contact-form');
+
+  const formEvent = form.addEventListener("submit", (e) =>{
+    e.preventDefault();
+
+    let mail = new FormData(form);
+
+    sendMail(mail);
+  });
+
+  const sendMail = (mail) => {
+    fetch("https://godfreys-portfolio.herokuapp.com/mail", {
+      method: "post",
+      body: mail,
+    }).then((response) => {
+      return response.json();
+    })
+  }
+</script>
