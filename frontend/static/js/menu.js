@@ -41,8 +41,30 @@ function closeOverlay() {
   showMenu = false;
 }
 
-document.querySelectorAll(".btn-dismiss").forEach((btn) => {
-  btn.addEventListener("click", () => {
-    document.querySelector(".card-alert").style.display = none;
-  });
-});
+// Modal handler
+getStatus();
+async function getStatus() {
+  const options = {
+    method: "GET",
+    headers: { "Content-type": "application/json;charset=UTF-8" },
+  };
+  const response = await fetch("/mail", options);
+  const data = await response.json();
+  const status = data.status;
+
+  const modal = document.querySelector(".modal");
+  modal.style.display = "none";
+  if(status == 200) {
+    modal.innerHTML = `
+      <div id="alert" class="modal-content"><strong>Message sent</strong></div>
+      <br><button><a href="/">Back</a></button>
+    `;
+    modal.style.display = "block";
+  } else {
+     modal.innerHTML = `
+      <div id="alert" class="modal-content"><strong>Message not sent</strong></div>
+      <br><button><a href="/contact">Retry</a></button>
+    `;
+    modal.style.display = "block";
+  }
+}
