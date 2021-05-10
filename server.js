@@ -113,7 +113,7 @@ app.post("/mail", (req, res)=> {
      }
     });
 
-     res.render("mail", { alerts });
+     res.render("contact", { alerts });
   
 });
 
