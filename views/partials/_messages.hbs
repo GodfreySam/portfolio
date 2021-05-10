@@ -1,10 +1,25 @@
 
-{{#if alerts}}
-{{#each alerts}}
+{{#if success_msg}}
 <div class="card-alert">
   <div class="card-content">
-    {{alertMsg msg}}
+    {{successMsg success_msg}}
   </div>
 </div>
-{{/each}}
+{{/if}}
+
+{{#if error_msg}}
+<div class="card-alert">
+  <div class="card-content">
+    {{errorMsg error_msg}}
+  </div>
+</div>
+{{/if}}
+
+{{#if error}}
+<div class="card-alert">
+  <div class="card-content">
+    {{checkErr error}}
+  </div>
+  <button type="button"><a href="/">Back</a></button>
+</div>
 {{/if}}

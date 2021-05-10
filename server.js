@@ -1,4 +1,6 @@
 const express = require("express");
+const flash = require("connect-flash");
+const session = require("express-session");
 const path = require("path");
 const nodemailer= require("nodemailer");
 const dotenv = require("dotenv");
@@ -22,9 +24,19 @@ app.engine(
   ".hbs",
   exphbs({
     helpers: {
-      alertMsg: function (msg) {
+      successMsg: function (msg) {
         if (typeof msg != "") {
           return msg;
+        }
+      },
+      errorMsg: function (msg) {
+        if (typeof msg != "") {
+          return msg;
+        }
+      },
+      checkErr: function (err) {
+        if (typeof err != "") {
+          return err;
         }
       },
     },
@@ -34,6 +46,27 @@ app.engine(
 );
 
 app.set("view engine", ".hbs");
+
+// express sessions
+app.use(
+  session({
+    secret: "keyboard cat",
+    resave: false,
+    saveUninitialized: false,
+  })
+);
+
+// Connect flash
+app.use(flash());
+
+// Set global variables
+app.use(function (req, res, next) {
+  res.locals.user = req.user || null;
+  res.locals.success_msg = req.flash("success_msg");
+  res.locals.error_msg = req.flash("error_msg");
+  res.locals.error = req.flash("error");
+  next();
+});
 
 // Static folder
 app.use(express.static(path.join(__dirname, "frontend")));
@@ -90,7 +123,7 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-app.post("/mail", (req, res)=> {
+app.post("/contact", (req, res)=> {
 
     const mailOptions = {
       from: req.body.name,
@@ -107,14 +140,13 @@ app.post("/mail", (req, res)=> {
     transporter.sendMail(mailOptions, function (err, info) {
      if (err) {
        console.log(err);
-       alerts.push({ msg: `Message sent, Thank you \n \n <button><a href="/">Close</a></button>` });
+       req.flash("success_msg", `Message sent, Thank you \n \n <button><a href="/">Close</a></button>`);
+       res.redirect("/contact");
      } else {
-       alerts.push({ msg: `Message not sent \n \n <button><a href="/contact">Retry</a></button>` });
+       req.flash("error_msg", `Message not sent \n \n <button><a href="/contact">Retry</a></button>`);
+       res.redirect("/contact");
      }
-    });
-
-     res.render("contact", { alerts });
-  
+    });  
 });
 
 const PORT = process.env.PORT || 3050;
