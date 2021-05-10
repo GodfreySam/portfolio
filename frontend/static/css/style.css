@@ -552,3 +552,20 @@ tr:nth-child(even) {
     font-weight: 700;
   }
 }
+
+.card-alert {
+  background: rgb(64, 241, 64);
+  color: rgb(214, 29, 29);
+  text-align: center !important;
+  font-size: 0.8rem !important;
+  margin: 13% auto !important;
+  border-radius: 10px !important;
+  padding: 1.9rem !important;
+  box-shadow: 0 5px 8px 0 rgb(0, 0, 0.2), 0 7px 20px 0 rgb(0, 0, 0.17) !important;
+}
+
+.card-content button {
+  background: grey !important;
+  padding: 0.5rem 1rem !important;
+  color: #fff !important;
+}

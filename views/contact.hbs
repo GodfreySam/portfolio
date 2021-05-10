@@ -1,7 +1,6 @@
 <main id="contact">
-  <!--Modal-->
-  <div class="modal"></div>
   <div class="card">
+    {{> _messages}}
     <div class="contact-container">
       <h1 class="lg-heading">Contact</h1>
       <p class="sm-heading">GET IN TOUCH</p>
@@ -32,7 +31,6 @@
     let mail = new FormData(form);
 
     sendMail(mail);
-    getStatus();
   });
 
   const sendMail = (mail) => {

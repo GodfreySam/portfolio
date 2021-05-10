@@ -22,6 +22,13 @@ app.use(express.urlencoded({ extended: true }));
 app.engine(
   ".hbs",
   exphbs({
+    helpers: {
+      alertMsg: function (msg) {
+        if (typeof msg != "") {
+          return msg;
+        }
+      },
+    },
     defaultLayout: "index",
     extname: ".hbs",
   })
@@ -102,15 +109,19 @@ app.post("/mail", (req, res)=> {
       Email: ${data.email} \n \n
       ${data.message}`,
     };
-  
+    
+    let alerts = [];
+
     transporter.sendMail(mailOptions, function (err, info) {
      if (err) {
        console.log(err);
-       return res.json({ status: 500 });
+       alerts.push({ msg: `Message sent, Thank you \n \n <button><a href="/">Close</a></button>` });
      } else {
-       return res.json({ status: 200 });
+       alerts.push({ msg: `Message not sent \n \n <button><a href="/contact">Retry</a></button>` });
      }
     });
+
+     res.render("contact", { alerts });
   })
 });
 
