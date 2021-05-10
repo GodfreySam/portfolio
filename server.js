@@ -5,7 +5,6 @@ const dotenv = require("dotenv");
 const exphbs = require("express-handlebars");
 const fs = require("fs");
 const cors = require("cors");
-const multiparty = require("multiparty");
 
 // Load config
 dotenv.config({ path: "./config/config.env" });
@@ -92,13 +91,6 @@ const transporter = nodemailer.createTransport({
 });
 
 app.post("/mail", (req, res)=> {
-  
-  // let form = new multiparty.Form();
-  // let data = {};
-  // form.parse(req, function (err, fields) {
-  //   Object.keys(fields).forEach(function (property) {
-  //     data[property] = fields[property].toString();
-  //   });
 
     const mailOptions = {
       from: req.body.name,
@@ -121,8 +113,8 @@ app.post("/mail", (req, res)=> {
      }
     });
 
-     res.render("contact", { alerts });
-  // })
+     res.render("mail", { alerts });
+  
 });
 
 const PORT = process.env.PORT || 3050;
