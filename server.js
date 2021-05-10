@@ -138,10 +138,16 @@ app.post("/contact", (req, res)=> {
     transporter.sendMail(mailOptions, function (err, info) {
      if (err) {
        console.log(err);
-       req.flash("success_msg", `Message sent, Thank you \n \n <button><a href="/">Close</a></button>`);
+        req.flash(
+          "error_msg",
+          "Message not sent"
+        );
        res.redirect("/contact");
      } else {
-       req.flash("error_msg", `Message not sent \n \n <button><a href="/contact">Retry</a></button>`);
+        req.flash(
+          "success_msg",
+          "Message sent, Thank you"
+        );
        res.redirect("/contact");
      }
     });  

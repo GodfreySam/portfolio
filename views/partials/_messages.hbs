@@ -3,6 +3,7 @@
 <div class="card-alert">
   <div class="card-content">
     {{successMsg success_msg}}
+    <br><button><a href="/">Close</a></button>
   </div>
 </div>
 {{/if}}
@@ -11,6 +12,7 @@
 <div class="card-alert">
   <div class="card-content">
     {{errorMsg error_msg}}
+    <br><button><a href="/contact">Retry</a></button>
   </div>
 </div>
 {{/if}}
@@ -20,6 +22,6 @@
   <div class="card-content">
     {{checkErr error}}
   </div>
-  <button type="button"><a href="/">Back</a></button>
+  <br><button><a href="/">Back</a></button>
 </div>
 {{/if}}
