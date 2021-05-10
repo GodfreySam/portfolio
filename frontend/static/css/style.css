@@ -557,7 +557,8 @@ tr:nth-child(even) {
   background: rgb(64, 241, 64);
   color: rgb(214, 29, 29);
   text-align: center !important;
-  font-size: 0.8rem !important;
+  font-size: 1rem !important;
+  font-weight: 400;
   margin: 13% auto !important;
   border-radius: 10px !important;
   padding: 1.9rem !important;
@@ -566,6 +567,7 @@ tr:nth-child(even) {
 
 .card-content button {
   background: grey !important;
-  padding: 0.5rem 1rem !important;
+  padding: 0.2rem 0.8rem !important;
   color: #fff !important;
+  margin-top: 1rem;
 }
