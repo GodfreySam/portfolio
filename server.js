@@ -134,8 +134,6 @@ app.post("/contact", (req, res)=> {
       Email: ${req.body.email} \n \n
       ${req.body.message}`,
     };
-    
-    let alerts = [];
 
     transporter.sendMail(mailOptions, function (err, info) {
      if (err) {
