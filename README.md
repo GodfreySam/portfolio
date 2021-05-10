@@ -1,3 +1,3 @@
 my portfolio website:
-host at
+hosted at
 http://godfreyo.link/
