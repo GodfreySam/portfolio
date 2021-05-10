@@ -93,21 +93,21 @@ const transporter = nodemailer.createTransport({
 
 app.post("/mail", (req, res)=> {
   
-  let form = new multiparty.Form();
-  let data = {};
-  form.parse(req, function (err, fields) {
-    Object.keys(fields).forEach(function (property) {
-      data[property] = fields[property].toString();
-    });
+  // let form = new multiparty.Form();
+  // let data = {};
+  // form.parse(req, function (err, fields) {
+  //   Object.keys(fields).forEach(function (property) {
+  //     data[property] = fields[property].toString();
+  //   });
 
     const mailOptions = {
-      from: data.name,
+      from: req.body.name,
       to: process.env.MAIL_USER,
       subject: "From Portfolio",
       text: `
-      From: ${data.name}
-      Email: ${data.email} \n \n
-      ${data.message}`,
+      From: ${req.body.name}
+      Email: ${req.body.email} \n \n
+      ${req.body.message}`,
     };
     
     let alerts = [];
@@ -122,7 +122,7 @@ app.post("/mail", (req, res)=> {
     });
 
      res.render("contact", { alerts });
-  })
+  // })
 });
 
 const PORT = process.env.PORT || 3050;
