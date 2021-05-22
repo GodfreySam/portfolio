@@ -297,12 +297,33 @@ button.btn:hover {
   transition: all 0.5s ease-out;
 }
 
-.bio-img {
+.lg-pic {
   width: 12rem;
   height: auto;
-  object-fit: cover;
   border-radius: 50%;
   z-index: 999;
+}
+
+.sm-pic {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .lg-pic {
+    display: none;
+  }
+
+  .profile {
+    text-align: center;
+  }
+
+  .sm-pic {
+    display: inline;
+    width: 6rem;
+    height: auto;
+    border-radius: 50%;
+    z-index: 999;
+  }
 }
 
 #work {
