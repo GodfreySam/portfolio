@@ -4,7 +4,7 @@
     <div class="contact-container">
       <h1 class="lg-heading">Contact</h1>
       <p class="sm-heading">GET IN TOUCH</p>
-      <form autocomplete="off" id="contact-form">
+      <form action="/contact" method="POST"  autocomplete="off" id="contact-form">
         <div class="">
           <label>Name</label>
           <input class="" type="text" required name="name">
@@ -25,34 +25,3 @@
     </div>
   </div>
 </main>
-
-<script>
-  document.querySelector("#contact-form").addEventListener('submit', submitForm);
-
-  const submitForm = (e) => {
-    e.preventDefault();
-
-    const name = document.querySelector("#name")..value;
-    const email = document.querySelector("#email").value;
-    const message = document.querySelector("#message").value;
-    const captcha = document.querySelector("#g-recaptcha-response").value;
-
-    fetch('/contact', {
-      method: 'POST',
-      headers: {
-        'Accept': 'application/json, text/plain, */*',
-        'Content-type': 'application/json'
-      },
-      body: JSON.stringify({
-        name: name,
-        email: email,
-        message: message,
-        captcha: captcha
-        })
-    })
-    .then((res) => res.json())
-    .then((data) => {
-      console.log("data posted");
-    });
-  }
-</script>
