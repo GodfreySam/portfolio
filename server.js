@@ -7,6 +7,7 @@ const dotenv = require("dotenv");
 const exphbs = require("express-handlebars");
 const fs = require("fs");
 const cors = require("cors");
+const request = require("request");
 
 // Load config
 dotenv.config({ path: "./config/config.env" });
@@ -124,33 +125,49 @@ const transporter = nodemailer.createTransport({
 });
 
 app.post("/contact", (req, res)=> {
+  const captcha = req.body.captcha;
+  if (captcha === undefined || captcha === "" || captcha === null) {
+    req.flash("error_msg", "Please select captcha");
+    return res.redirect("/contact");
+  }
 
-    const mailOptions = {
-      from: req.body.name,
-      to: process.env.MAIL_USER,
-      subject: "From Portfolio",
-      text: `
+  // verify URL
+  const verifyUrl = `https://google.com/recaptcha/api/siteverify?secret=${process.env.RECAPTCHA_SECRET}&response=${captcha}&remoteip=${req.socket.remoteAddress}`;
+
+  request(verifyUrl, (err, response, body) => {
+    body = JSON.parse(body);
+
+    // If not successful
+    if (body.success !== undefined && !body.success) {
+      req.flash("error_msg", "Failed captcha verification");
+      return res.redirect("/register");
+    }
+
+    // If successful
+    req.flash("success_msg", "Captcha passed");
+    next();
+  });
+  
+  const mailOptions = {
+    from: req.body.name,
+    to: process.env.MAIL_USER,
+    subject: "From Portfolio",
+    text: `
       From: ${req.body.name}
       Email: ${req.body.email} \n \n
       ${req.body.message}`,
-    };
+  };
 
-    transporter.sendMail(mailOptions, function (err, info) {
-     if (err) {
-       console.log(err);
-        req.flash(
-          "error_msg",
-          "Message not sent"
-        );
-       res.redirect("/contact");
-     } else {
-        req.flash(
-          "success_msg",
-          "Message sent, Thank you"
-        );
-       res.redirect("/contact");
-     }
-    });  
+  transporter.sendMail(mailOptions, function (err, info) {
+    if (err) {
+      console.log(err);
+      req.flash("error_msg", "Message not sent");
+      res.redirect("/contact");
+    } else {
+      req.flash("success_msg", "Message sent, Thank you");
+      res.redirect("/contact");
+    }
+  });
 });
 
 const PORT = process.env.PORT || 3050;

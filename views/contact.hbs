@@ -4,7 +4,7 @@
     <div class="contact-container">
       <h1 class="lg-heading">Contact</h1>
       <p class="sm-heading">GET IN TOUCH</p>
-      <form autocomplete="off" action="/contact" method="POST">
+      <form autocomplete="off" id="contact-form">
         <div class="">
           <label>Name</label>
           <input class="" type="text" required name="name">
@@ -17,8 +17,42 @@
           <label>Message</label>
           <textarea id="email-body" rows="5" cols="50" required name="message"></textarea>
         </div>
+        <div class="w3-section">
+           <div class="g-recaptcha" data-sitekey="6Ldj2lsbAAAAAD5NXrObnRX3ElSvKiDtq15skBvx"></div>
+        </div>
         <button type="submit" class="">Send</button>
       </form>
     </div>
   </div>
 </main>
+
+<script>
+  document.querySelector("#contact-form").addEventListener('submit', submitForm);
+
+  const submitForm = (e) => {
+    e.preventDefault();
+
+    const name = document.querySelector("#name")..value;
+    const email = document.querySelector("#email").value;
+    const message = document.querySelector("#message").value;
+    const captcha = document.querySelector("#g-recaptcha-response").value;
+
+    fetch('/register', {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json, text/plain, */*',
+        'Content-type': 'application/json'
+      },
+      body: JSON.stringify({
+        name: name,
+        email: email,
+        message: message,
+        captcha: captcha
+        })
+    })
+    .then((res) => res.json())
+    .then((data) => {
+      console.log("data posted");
+    });
+  }
+</script>
