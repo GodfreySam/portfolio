@@ -13,3 +13,13 @@ body {
   font-size: 18px !important;
   font-weight: 700 !important;
 }
+
+.btn:hover {
+	background-color: #ECE7EB !important;
+	color: black !important;
+}
+
+.btn:active {
+	transform: translateY(7px) !important;
+}
+
