@@ -20,6 +20,7 @@ const Hero = () => {
 												<a
 													href="https://drive.google.com/file/d/1WH0L45mvlnaX-nbMybPsP2gpAjaHQXqI/view?usp=sharing"
 													target="_blank"
+													rel="noopener noreferrer"
 													className="btn btn-primary btn-learn"
 												>
 													Download CV <i className="icon-download4"></i>

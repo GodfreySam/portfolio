@@ -27,7 +27,7 @@ const Sidebar = () => {
 						<a href="index.html">Godfrey Samuel</a>
 					</h1>
 					<span className="position">
-						<a href="#">Full Stack Developer</a>
+						<a href="">Full Stack Developer</a>
 					</span>
 				</div>
 				<nav
@@ -39,7 +39,7 @@ const Sidebar = () => {
 					<div id="navbar" className="collapse">
 						<ul>
 							<li className="active">
-								<a href="#" data-nav-section="home">
+								<a href="" data-nav-section="home">
 									Home
 								</a>
 							</li>
@@ -70,17 +70,29 @@ const Sidebar = () => {
 					<div>
 						<ul className="">
 							<li>
-								<a href="https://github.com/GodfreySam" target="_blank">
+								<a
+									href="https://github.com/GodfreySam"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
 									<i className="icon-github" style={{ color: "black" }}></i>
 								</a>
 							</li>
 							<li>
-								<a href="https://linkedin.com/godfrey--samuel">
+								<a
+									href="https://linkedin.com/in/godfrey--samuel"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
 									<i className="icon-linkedin2 text-primary"></i>
 								</a>
 							</li>
 							<li>
-								<a href="https://twitter.com/freyyo">
+								<a
+									href="https://twitter.com/freyyo"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
 									<i className="icon-twitter2 text-primary"></i>
 								</a>
 							</li>

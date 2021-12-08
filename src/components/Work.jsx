@@ -38,7 +38,7 @@ const Work = () => {
 											<span>{item.type}</span>
 											<p className="icon">
 												<span>
-													<a href={item.url} target="_blank">
+													<a href={item.url} target="_blank" rel="noopener noreferrer">
 														<i className="icon-eye"></i>
 													</a>
 												</span>
@@ -61,6 +61,7 @@ const Work = () => {
 							<a
 								href="https://github.com/GodfreySam"
 								target="_blank"
+								rel="noopener noreferrer"
 								className="btn btn-primary btn-lg btn-load-more"
 							>
 								See more
