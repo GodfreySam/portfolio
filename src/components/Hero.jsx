@@ -18,7 +18,7 @@ const Hero = () => {
 											</h1>
 											<p>
 												<a
-													href="https://drive.google.com/file/d/1CcIdr-0-l-Btgt3-MkP6gCCTqhrTO2kG/view?usp=sharing"
+													href="https://drive.google.com/file/d/1WH0L45mvlnaX-nbMybPsP2gpAjaHQXqI/view?usp=sharing"
 													target="_blank"
 													className="btn btn-primary btn-learn"
 												>
