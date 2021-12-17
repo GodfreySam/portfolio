@@ -2,16 +2,16 @@ export const data = [
 	{
 		type: "Ecommerce Web App",
 		path: "images/project-1.png",
-		url: "https://frooto-online-shop.herokuapp.com/",
+		url: "https://frooto-shop.netlify.app/",
 		git: "https://github.com/GodfreySam/waaw-e-commerce/tree/main",
 	},
-   {
+	{
 		type: "NGO Website",
 		path: "images/project-2.png",
 		url: "https://fhsf-web-app.herokuapp.com/",
 		git: "https://github.com/GodfreySam/",
 	},
-   {
+	{
 		type: "Social Web App",
 		path: "images/project-3.png",
 		url: "https://materialui-social.netlify.app",
@@ -46,5 +46,5 @@ export const data = [
 		path: "images/project-8.png",
 		url: "https://todo-event-list.netlify.app",
 		git: "https://github.com/GodfreySam/event-list",
-	}
+	},
 ];
