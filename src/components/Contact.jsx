@@ -28,11 +28,8 @@ const Contact = () => {
 
 		console.log(newMessage);
 		try {
-			let res = await axios.post(
-				"https://contact-mailer-api.herokuapp.com/api/v1/contact",
-				newMessage,
-			);
-			console.log(res);
+			let res = await axios.post(process.env.CONTACT_API_URL, newMessage);
+			// console.log(res);
 			if (res.data.success) toast.success(res.data.msg);
 			setMessage("")
 			setSubject("");
