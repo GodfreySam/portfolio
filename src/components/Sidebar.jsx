@@ -38,27 +38,27 @@ const Sidebar = () => {
 					<div id="navbar" className="collapse">
 						<ul>
 							<li className="active">
-								<a href="" data-nav-section="home">
+								<a href="/#home" data-nav-section="home">
 									Home
 								</a>
 							</li>
 							<li>
-								<a href="#" data-nav-section="about">
+								<a href="/#about" data-nav-section="about">
 									About
 								</a>
 							</li>
 							<li>
-								<a href="#" data-nav-section="services">
+								<a href="/#services" data-nav-section="services">
 									Services
 								</a>
 							</li>
 							<li>
-								<a href="#" data-nav-section="work">
+								<a href="/#work" data-nav-section="work">
 									Work
 								</a>
 							</li>
 							<li>
-								<a href="#" data-nav-section="contact">
+								<a href="/#contact" data-nav-section="contact">
 									Contact
 								</a>
 							</li>
