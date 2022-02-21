@@ -3,8 +3,7 @@ import React from "react";
 const Sidebar = () => {
 	return (
 		<>
-			<a
-				href="#"
+			<span
 				className="js-colorlib-nav-toggle colorlib-nav-toggle"
 				data-toggle="collapse"
 				data-target="#navbar"
@@ -12,7 +11,7 @@ const Sidebar = () => {
 				aria-controls="navbar"
 			>
 				<i></i>
-			</a>
+			</span>
 			<aside
 				id="colorlib-aside"
 				role="complementary"
