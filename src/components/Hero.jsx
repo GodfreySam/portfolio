@@ -5,7 +5,7 @@ const Hero = () => {
 		<section id="colorlib-hero" className="js-fullheight" data-section="home">
 			<div className="flexslider js-fullheight">
 				<ul className="slides">
-					<li className="slides-bg">
+					<li>
 						<div className="slide-overlay"></div>
 						<div className="overlay"></div>
 						<div className="container-fluid">
@@ -33,7 +33,7 @@ const Hero = () => {
 							</div>
 						</div>
 					</li>
-					<li className="slides-bg">
+					<li>
 						<div className="overlay"></div>
 						<div className="container-fluid">
 							<div className="row">

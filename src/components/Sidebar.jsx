@@ -12,7 +12,7 @@ const Sidebar = () => {
 			>
 				<i></i>
 			</span>
-			<aside
+			<div
 				id="colorlib-aside"
 				role="complementary"
 				className="border js-fullheight"
@@ -98,7 +98,7 @@ const Sidebar = () => {
 						</ul>
 					</div>
 				</div>
-			</aside>
+			</div>
 		</>
 	);
 };
