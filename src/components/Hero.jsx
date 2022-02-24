@@ -19,7 +19,7 @@ const Hero = () => {
 											</h1>
 											<p>
 												<a
-													href="https://docs.google.com/document/d/1RRiHDipItQe17C7DNc1aKMWuhWo5LI_YwK_VVARc3fU/edit?usp=sharing"
+													href="https://drive.google.com/file/d/1pk4oJX5Td1Nnin3nrWl7A4b9jjuhY4DJ/view?usp=sharing"
 													target="_blank"
 													rel="noopener noreferrer"
 													className="btn btn-primary btn-learn"
@@ -57,7 +57,7 @@ const Hero = () => {
 					</li>
 				</ul>
 				<div className="hero-img">
-					<img src="images/godfrey.png" alt="" />
+					<img src="images/godfrey.png" alt="Picture of Godfrey" />
 				</div>
 			</div>
 		</section>
