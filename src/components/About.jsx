@@ -22,18 +22,9 @@ const About = () => {
 										international businesses come to terms with present day realities.
 									</p>
 									<p>
-										Godfrey is the Co-founder of E-printing Software as a service (SaaS)
-										product hosted at{" "}
-										<a
-											href="http://epinsorter.com/"
-											target="_blank"
-											rel="noopener noreferrer"
-										>
-											epinsorter.com
-										</a>
-										, a startup that helps make sorting and printing of telephone utility
-										bill recharge cards for the distributors and dealers easily accessible
-										on any device.
+										Godfrey Co-founded and built a E-printing Solution for a local small utility company. 
+										An inhouse product for sorting and printing of telephone utility bill recharge cards
+										for the distributors and dealers.
 									</p>
 								</div>
 							</div>
