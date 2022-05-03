@@ -19,7 +19,7 @@ const Hero = () => {
 											</h1>
 											<p>
 												<a
-													href="https://drive.google.com/file/d/1pk4oJX5Td1Nnin3nrWl7A4b9jjuhY4DJ/view?usp=sharing"
+													href="https://docs.google.com/document/d/1RRiHDipItQe17C7DNc1aKMWuhWo5LI_YwK_VVARc3fU/edit?usp=sharing"
 													target="_blank"
 													rel="noopener noreferrer"
 													className="btn btn-primary btn-learn"

@@ -35,7 +35,7 @@ const About = () => {
 									<span className="icon2">
 										<i className="icon-bulb"></i>
 									</span>
-									<h3>UI/UX Design</h3>
+									<h3>Full Stack Developer</h3>
 								</div>
 							</div>
 							<div className="col-md-3 animate-box" data-animate-effect="fadeInRight">
@@ -43,7 +43,7 @@ const About = () => {
 									<span className="icon2">
 										<i className="icon-globe-outline"></i>
 									</span>
-									<h3>Web Developer</h3>
+									<h3>Software Developer</h3>
 								</div>
 							</div>
 							<div className="col-md-3 animate-box" data-animate-effect="fadeInTop">
