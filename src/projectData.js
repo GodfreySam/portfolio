@@ -17,12 +17,12 @@ export const data = [
 	// 	url: "https://materialui-social.netlify.app",
 	// 	git: "https://github.com/GodfreySam/waaw-social",
 	// },
-	{
-		type: "Web Application",
-		path: "images/project-4.png",
-		url: "https://www.epinsorter.com/",
-		git: "https://github.com/GodfreySam",
-	},
+	// {
+	// 	type: "Web Application",
+	// 	path: "images/project-4.png",
+	// 	url: "https://www.epinsorter.com/",
+	// 	git: "https://github.com/GodfreySam",
+	// },
 	// {
 	// 	type: "Social Media Web App",
 	// 	path: "images/project-5.png",
@@ -47,4 +47,22 @@ export const data = [
 	// 	url: "https://todo-event-list.netlify.app",
 	// 	git: "https://github.com/GodfreySam/event-list",
 	// },
+	{
+		type: "Company Website",
+		path: "images/alan-ture.png",
+		url: "https://alanturecodes.com/",
+		git: "https://github.com/GodfreySam/",
+	},
+	{
+		type: "Company Automated Workflow",
+		path: "images/ubec.png",
+		url: "https://uwd.vercel.app/",
+		git: "https://github.com/GodfreySam/",
+	},
+	{
+		type: "Company inhouse Web conference App",
+		path: "images/video-c.png",
+		url: "https://waaw-stream-eight.vercel.app/",
+		git: "https://github.com/GodfreySam/",
+	},
 ];
