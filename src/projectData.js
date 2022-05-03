@@ -50,7 +50,7 @@ export const data = [
 	{
 		type: "Company Website",
 		path: "images/alan-ture.png",
-		url: "https://alanturecodes.com/",
+		url: "https://alanturingcodes.com/",
 		git: "https://github.com/GodfreySam/",
 	},
 	{
