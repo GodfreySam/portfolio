@@ -22,9 +22,9 @@ const About = () => {
 										international businesses come to terms with present day realities.
 									</p>
 									<p>
-										Godfrey Co-founded and built a E-printing Solution for a local small utility company. 
-										An inhouse product for sorting and printing of telephone utility bill recharge cards
-										for the distributors and dealers.
+										Co-founded and built an E-printing solution for a local small utility
+										company. An in-house product for sorting and printing telephone
+										utility bill recharge cards for the distributors and dealers.
 									</p>
 								</div>
 							</div>
