@@ -15,7 +15,7 @@ const App = () => {
 			<div id="container-wrap">
 				<Sidebar />
 				<div id="colorlib-main">
-					<Hero />
+					{/* <Hero /> */}
 					<About />
 					<Services />
 					<Work />

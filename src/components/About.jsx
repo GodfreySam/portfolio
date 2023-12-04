@@ -12,19 +12,49 @@ const About = () => {
 						>
 							<div className="col-md-12">
 								<div className="about-desc">
-									<span className="heading-meta">About</span>
+									<h1 className="heading-meta">About</h1>
 									<h2 className="colorlib-heading">Who Am I?</h2>
 									<p>
-										<strong>Hi I'm Godfrey Samuel,</strong> a full stack Developer, a
-										highly motivated, result-oriented developer with creative
-										problem-solving skills leveraging his technological and developer
-										skills at industry and enterprise level helping local and
-										international businesses come to terms with present day realities.
+										<strong>Godfrey Samuel</strong> is a highly motivated, result-oriented
+										full stack developer with over five years of experience working in the
+										tech industry.
 									</p>
 									<p>
-										Co-founded and built an E-printing solution for a local small utility
-										company. An in-house product for sorting and printing telephone
-										utility bill recharge cards for the distributors and dealers.
+										He has worked in various capacities as a front-end developer, and a
+										back-end developer leveraging his knowledge of various technologies to
+										build scalable and robust applications at industry and enterprise
+										level; helping local and international businesses come to terms with
+										present day realities.
+									</p>
+									<p>
+										He is a team player with creative problem-solving skills and a strong
+										desire to learn and improve his skills.
+									</p>
+									<p>
+										Currently, he is a Software Developer at{" "}
+										<a
+											href="https://www.ppdc.org/"
+											target="_blank"
+											rel="noopener noreferrer"
+										>
+											Public and Private Development Centre (PPDC)
+										</a>
+										; a civil society organization that promotes transparency and
+										accountability in public contracting through data analysis and civic
+										engagement. His role at PPDC involves building and maintaining the
+										organization's web applications and in-house software.
+									</p>
+									<p>
+										He is also the lead developer at{" "}
+										<a
+											href="https://www.alanturingcodes.com/"
+											target="_blank"
+											rel="noopener noreferrer"
+										>
+											Alan Turing Codes
+										</a>
+										; a software development company that builds software solutions for
+										businesses and organizations.
 									</p>
 								</div>
 							</div>
