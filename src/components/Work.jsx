@@ -11,7 +11,7 @@ const Work = () => {
 						data-animate-effect="fadeInLeft"
 					>
 						<span className="heading-meta">My Work</span>
-						<h2 className="colorlib-heading animate-box">Recent Work</h2>
+						<h2 className="colorlib-heading animate-box">Some of my Works</h2>
 					</div>
 				</div>
 				<div
