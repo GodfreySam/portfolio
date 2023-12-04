@@ -45,7 +45,7 @@ const About = () => {
 										organization's web applications and in-house software.
 									</p>
 									<p>
-										He is also the lead developer at{" "}
+										On the side, He is also the lead developer at{" "}
 										<a
 											href="https://www.alanturingcodes.com/"
 											target="_blank"
