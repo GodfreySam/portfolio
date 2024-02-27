@@ -79,20 +79,11 @@ const Sidebar = () => {
 							</li>
 							<li>
 								<a
-									href="https://linkedin.com/in/godfrey--samuel"
+									href="https://linkedin.com/in/godfreysam"
 									target="_blank"
 									rel="noopener noreferrer"
 								>
 									<i className="icon-linkedin2 text-primary"></i>
-								</a>
-							</li>
-							<li>
-								<a
-									href="https://twitter.com/freyyo"
-									target="_blank"
-									rel="noopener noreferrer"
-								>
-									<i className="icon-twitter2 text-primary"></i>
 								</a>
 							</li>
 						</ul>
