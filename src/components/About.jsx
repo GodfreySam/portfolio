@@ -31,6 +31,9 @@ const About = () => {
 										desire to learn and improve his skills.
 									</p>
 									<p>
+										His watch words are; <strong>Quality, Integrity, and Scalable</strong>.
+									</p>
+									<p>
 										Currently, he is a Software Developer at{" "}
 										<a
 											href="https://www.ppdc.org/"
@@ -43,9 +46,10 @@ const About = () => {
 										accountability in public contracting through data analysis and civic
 										engagement. His role at PPDC involves building and maintaining the
 										organization's web applications and in-house software.
+										He is currently implementing a multi-tenant architecture for some of the organization's applications. This will allow the organization to serve multiple clients with a single instance of the application.
 									</p>
 									<p>
-										On the side, He is also the lead developer at{" "}
+										On the side, He is also the lead developer and lead integration engineer at;{" "}
 										<a
 											href="https://www.alanturingcodes.com/"
 											target="_blank"
