@@ -105,7 +105,7 @@ const About = () => {
 										Let's get building!
 									</h2>
 									<a href="#contact" className="btn-hire">
-										Hire me
+										Get in touch
 									</a>
 								</div>
 							</div>
