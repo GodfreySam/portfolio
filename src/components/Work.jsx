@@ -25,24 +25,6 @@ const Work = () => {
 			period: "Oct 2024 - Present",
 		},
 		{
-			id: 2,
-			title: "Alivee",
-			description:
-				"Lead Backend Developer for an innovative e-health solution. Responsible for data modeling, API development, third-party service integration, and system optimization. Managing development operations and deployment strategies.",
-			category: "backend",
-			technologies: [
-				"Node.js",
-				"API Development",
-				"System Architecture",
-				"DevOps",
-				"Cloud Services",
-			],
-			github: "https://github.com/GodfreySam",
-			live: "https://alivee.co",
-			type: "backend",
-			period: "Jul 2023 - Present",
-		},
-		{
 			id: 3,
 			title: "PPDC Projects",
 			description:
@@ -88,11 +70,12 @@ const Work = () => {
 				"Express",
 				"Redux",
 				"WebSocket",
+				"DEXI",
 			],
 			github: "https://github.com/GodfreySam",
 			live: "https://workflowpadi.com",
 			type: "fullstack",
-			period: "2023",
+			period: "Feb 2025 - May 2025",
 		},
 		{
 			id: 5,
@@ -106,12 +89,31 @@ const Work = () => {
 				"MongoDB",
 				"Express",
 				"Redux",
-				"WebSocket",
+				"OpenAI",
+				"DEXI"
 			],
 			github: "https://github.com/GodfreySam",
 			live: "https://budeshi.ng",
 			type: "fullstack",
-			period: "2022",
+			period: "Sep 2022 - May 2025",
+		},
+		{
+			id: 2,
+			title: "Alivee",
+			description:
+				"Lead Backend Developer for an innovative e-health solution. Responsible for data modeling, API development, third-party service integration, and system optimization. Managing development operations and deployment strategies.",
+			category: "backend",
+			technologies: [
+				"Node.js",
+				"API Development",
+				"System Architecture",
+				"DevOps",
+				"Cloud Services",
+			],
+			github: "https://github.com/GodfreySam",
+			live: "https://alivee.co",
+			type: "backend",
+			period: "Jul 2023 - 2024",
 		},
 	];
 
