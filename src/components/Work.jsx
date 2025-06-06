@@ -59,14 +59,12 @@ const Work = () => {
 				{
 					name: "Boomerang HR",
 					url: "https://boomeranghr.ppdc.org",
-					description:
-						"Human Resource Management System for PPDC",
+					description: "Human Resource Management System for PPDC",
 				},
 				{
 					name: "Gwapp",
 					url: "https://gwapp.ppdc.org",
-					description:
-						"Financial Management System for PPDC",
+					description: "Financial Management System for PPDC",
 				},
 				{
 					name: "Amebo",
@@ -266,7 +264,12 @@ const Work = () => {
 				>
 					<h3>Have a Project in Mind?</h3>
 					<p>Let's work together to bring your ideas to life.</p>
-					<a href="#contact" className="btn btn-primary">
+					<a
+						href="mailto:godfreysam09@gmail.com"
+						className="btn btn-primary"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
 						Start a Conversation
 						<svg
 							xmlns="http://www.w3.org/2000/svg"

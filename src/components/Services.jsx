@@ -143,7 +143,12 @@ const Services = () => {
 				>
 					<h3>Ready to Start Your Project?</h3>
 					<p>Let's discuss how I can help bring your vision to life.</p>
-					<a href="#contact" className="btn btn-primary">
+					<a
+						href="mailto:godfreysam09@gmail.com"
+						className="btn btn-primary"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
 						Get in Touch
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
