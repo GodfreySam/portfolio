@@ -174,28 +174,6 @@ const About = () => {
 									</li>
 								</ul>
 							</div>
-							<div className="role-item">
-								<h4>
-									Lead Backend Developer at{" "}
-									<a
-										href="https://alivee.co"
-										target="_blank"
-										rel="noopener noreferrer"
-										className="link-highlight"
-									>
-										Alivee
-									</a>
-								</h4>
-								<p className="role-period">Jul 2023 - Present</p>
-								<ul className="role-description">
-									<li>Lead backend development for e-health solution</li>
-									<li>Data modeling and API development</li>
-									<li>
-										Third-party service integration and system optimization
-									</li>
-									<li>Development operations and deployment management</li>
-								</ul>
-							</div>
 						</div>
 
 						<div className="experience-card">
@@ -225,6 +203,28 @@ const About = () => {
 										Implementing multi-tenant architecture for multiple clients
 									</li>
 									<li>Collaborating with stakeholders and team members</li>
+								</ul>
+							</div>
+							<div className="role-item">
+								<h4>
+									Lead Backend Developer at{" "}
+									<a
+										href="https://alivee.co"
+										target="_blank"
+										rel="noopener noreferrer"
+										className="link-highlight"
+									>
+										Alivee
+									</a>
+								</h4>
+								<p className="role-period">Jul 2023 - Aug 2024</p>
+								<ul className="role-description">
+									<li>Lead backend development for e-health solution</li>
+									<li>Data modeling and API development</li>
+									<li>
+										Third-party service integration and system optimization
+									</li>
+									<li>Development operations and deployment management</li>
 								</ul>
 							</div>
 							<div className="role-item">
