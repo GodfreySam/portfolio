@@ -37,10 +37,33 @@ const Work = () => {
 			period: "Oct 2024",
 		},
 		{
+			id: 4,
+			title: "WorkflowPadi",
+			description:
+				"A comprehensive workflow management platform developed to streamline business processes and enhance team collaboration, featuring human resource management, financial management, and project management.",
+			category: "fullstack",
+			technologies: [
+				"React",
+				"Node.js",
+				"Typescript",
+				"MongoDB",
+				"Express",
+				"Redux",
+				"WebSocket",
+				"DEXI",
+				"Multi-tenant Architecture",
+				"System Design",
+			],
+			github: "https://github.com/GodfreySam",
+			live: "https://workflowpadi.com",
+			type: "fullstack",
+			period: "Feb 2025 - May 2025",
+		},
+		{
 			id: 3,
 			title: "PPDC Projects",
 			description:
-				"Full-stack development role at Public and Private Development Centre, building and maintaining web applications with focus on multi-tenant architecture. Leading development of Boomerang, GWApp, and Amebo platforms.",
+				"Full-stack development role at Public and Private Development Centre, building and maintaining web applications with focus on multi-tenant architecture. Leading development of Boomerang HR, Gwapp, and Amebo platforms.",
 			category: "fullstack",
 			technologies: [
 				"React",
@@ -72,29 +95,6 @@ const Work = () => {
 			period: "Sep 2022 - May 2025",
 		},
 		{
-			id: 4,
-			title: "WorkflowPadi",
-			description:
-				"A comprehensive workflow management platform developed to streamline business processes and enhance team collaboration, featuring human resource management, financial management, and project management.",
-			category: "fullstack",
-			technologies: [
-				"React",
-				"Node.js",
-				"Typescript",
-				"MongoDB",
-				"Express",
-				"Redux",
-				"WebSocket",
-				"DEXI",
-				"Multi-tenant Architecture",
-				"System Design"
-			],
-			github: "https://github.com/GodfreySam",
-			live: "https://workflowpadi.com",
-			type: "fullstack",
-			period: "Feb 2025 - May 2025",
-		},
-		{
 			id: 5,
 			title: "Budeshi",
 			description:
@@ -108,7 +108,7 @@ const Work = () => {
 				"Express",
 				"Redux",
 				"OpenAI",
-				"DEXI"
+				"DEXI",
 			],
 			github: "https://github.com/GodfreySam",
 			live: "https://budeshi.ng",
