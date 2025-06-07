@@ -142,7 +142,7 @@ const About = () => {
 
 					<motion.div className="about-experience" variants={fadeInUp}>
 						<div className="experience-card">
-							<h3>Current Roles</h3>
+							<h3>Current Role</h3>
 							<div className="role-item">
 								<h4>
 									Lead Software Engineer and Business Partner at{" "}
