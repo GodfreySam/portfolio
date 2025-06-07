@@ -145,7 +145,7 @@ const About = () => {
 							<h3>Current Roles</h3>
 							<div className="role-item">
 								<h4>
-									Lead Software Engineer at{" "}
+									Lead Software Engineer and Business Partner at{" "}
 									<a
 										href="https://workdey.co"
 										target="_blank"
@@ -155,7 +155,7 @@ const About = () => {
 										WorkDey
 									</a>
 								</h4>
-								<p className="role-period">Oct 2024 - Present</p>
+								<p className="role-period">Oct 2024</p>
 								<ul className="role-description">
 									<li>
 										Provide strategic technical direction and ensure alignment

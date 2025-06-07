@@ -10,7 +10,7 @@ const Work = () => {
 			id: 1,
 			title: "WorkDey",
 			description:
-				"Lead Software Engineer role focusing on strategic technical direction, architectural decisions, and engineering best practices. Implementing CI/CD pipelines and ensuring system scalability for a digital marketplace platform.",
+				"Lead Software Engineer and Business Partner focusing on strategic technical direction, architectural decisions, and engineering best practices. Implementing CI/CD pipelines and ensuring system scalability for a digital marketplace platform.",
 			category: "leadership",
 			technologies: [
 				"System Architecture",
@@ -22,7 +22,7 @@ const Work = () => {
 			github: "https://github.com/GodfreySam",
 			live: "https://workdey.co",
 			type: "leadership",
-			period: "Oct 2024 - Present",
+			period: "Oct 2024",
 		},
 		{
 			id: 3,
@@ -35,6 +35,9 @@ const Work = () => {
 				"Node.js",
 				"Multi-tenant Architecture",
 				"System Design",
+				"MongoDB",
+				"Express",
+				"Redux",
 				"API Development",
 			],
 			projects: [
@@ -66,6 +69,7 @@ const Work = () => {
 			technologies: [
 				"React",
 				"Node.js",
+				"Typescript",
 				"MongoDB",
 				"Express",
 				"Redux",
@@ -86,6 +90,7 @@ const Work = () => {
 			technologies: [
 				"React",
 				"Node.js",
+				"Typescript",
 				"MongoDB",
 				"Express",
 				"Redux",
