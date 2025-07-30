@@ -28,7 +28,7 @@ A modern, responsive portfolio website built with React, showcasing software dev
 
 ### Prerequisites
 
-- Node.js (version 18 or higher)
+- Node.js (version 20 or higher recommended, minimum 18)
 - Yarn package manager
 
 ### Installation
@@ -71,7 +71,7 @@ This creates a `build` folder with the production-ready files.
 3. Deploy with the following settings:
    - **Build command**: `yarn run build`
    - **Publish directory**: `build`
-   - **Node version**: 18
+   - **Node version**: 20
 
 ### Manual Deployment
 
