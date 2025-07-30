@@ -16,7 +16,9 @@ const Hero = () => {
 							<span className="greeting">Hi, I'm</span>
 							<span className="name">Godfrey Samuel</span>
 						</h1>
-						<h2 className="hero-subtitle">Software Developer</h2>
+						<h2 className="hero-subtitle">
+							Software Developer and Integration Engineer
+						</h2>
 						<p className="hero-description">
 							I build modern, responsive web applications with a focus on system
 							scalability and user experience.

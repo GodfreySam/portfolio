@@ -145,7 +145,7 @@ const About = () => {
 							<h3>Current Role</h3>
 							<div className="role-item">
 								<h4>
-									Lead Software Engineer and Business Partner at{" "}
+									Lead Backend Developer and Integration Engineer at{" "}
 									<a
 										href="https://workdey.co"
 										target="_blank"
