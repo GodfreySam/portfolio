@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import React from "react";
 
 const Hero = () => {
 	return (
@@ -17,11 +16,12 @@ const Hero = () => {
 							<span className="name">Godfrey Samuel</span>
 						</h1>
 						<h2 className="hero-subtitle">
-							Software Developer and Integration Engineer
+							Full Stack Engineer and Integration Specialist
 						</h2>
 						<p className="hero-description">
-							I build modern, responsive web applications with a focus on system
-							scalability and user experience.
+							Building scalable full stack applications and leading technical
+							strategy for modern applications with focus on system reliability
+							and performance.
 						</p>
 					</motion.div>
 					<div className="hero-image-container">

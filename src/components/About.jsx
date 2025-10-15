@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import React from "react";
 import {
 	FaCloud,
 	FaCode,
@@ -103,17 +102,17 @@ const About = () => {
 					<motion.div className="about-text" variants={fadeInUp}>
 						<p className="lead">
 							<strong>Godfrey Samuel</strong> is a highly motivated and
-							results-oriented software developer with over five years of
+							results-oriented Lead Backend Engineer with over five years of
 							professional experience, passionately driven by technology and
 							innovation.
 						</p>
 						<p>
-							Proven expertise in both front-end and back-end development,
-							consistently delivering scalable and robust applications for
-							industry-leading businesses and enterprises across local and
-							international markets. Known for creative problem-solving
-							abilities and collaborative leadership in cross-functional team
-							environments.
+							Proven expertise in backend architecture, system design, and
+							technical leadership, consistently delivering scalable and robust
+							applications for industry-leading businesses and enterprises
+							across local and international markets. Known for strategic
+							technical direction and collaborative leadership in
+							cross-functional team environments.
 						</p>
 						<div className="contact-info">
 							{contactInfo.map((info) => (
@@ -145,32 +144,37 @@ const About = () => {
 							<h3>Current Role</h3>
 							<div className="role-item">
 								<h4>
-									Lead Backend Developer and Integration Engineer at{" "}
+									Lead Backend Engineer at{" "}
 									<a
-										href="https://workdey.co"
+										href="https://safegeeg.com"
 										target="_blank"
 										rel="noopener noreferrer"
 										className="link-highlight"
 									>
-										WorkDey
+										Safegeeg (formerly Workdey)
 									</a>
 								</h4>
-								<p className="role-period">Oct 2024</p>
+								<p className="role-period">Sep 2024 - Present</p>
 								<ul className="role-description">
 									<li>
-										Provide strategic technical direction and ensure alignment
+										Develop and implement strategic technical direction aligned
 										with organizational goals
 									</li>
 									<li>
-										Guide architectural decisions and establish engineering best
-										practices
+										Design and guide architectural decisions for scalable
+										backend systems
 									</li>
 									<li>
-										Make critical technical decisions during development cycles
+										Establish and enforce engineering best practices across
+										development teams
 									</li>
 									<li>
-										Oversee development operations strategy, including CI/CD
-										pipeline design
+										Make critical technical decisions balancing performance,
+										scalability, and maintainability
+									</li>
+									<li>
+										Design and implement CI/CD pipeline architecture and
+										deployment strategies
 									</li>
 								</ul>
 							</div>
@@ -190,19 +194,27 @@ const About = () => {
 										Public and Private Development Centre
 									</a>
 								</h4>
-								<p className="role-period">Sep 2022 - May 2025</p>
+								<p className="role-period">Aug 2022 - Apr 2025</p>
 								<ul className="role-description">
 									<li>
-										Full-stack development with focus on backend architecture
+										Built and maintained complete web applications with focus on
+										backend architecture
 									</li>
 									<li>
-										Building and maintaining web applications and in-house
-										software
+										Implemented scalable multi-tenant systems supporting
+										multiple clients
 									</li>
 									<li>
-										Implementing multi-tenant architecture for multiple clients
+										Designed and developed scalable REST APIs and data models
 									</li>
-									<li>Collaborating with stakeholders and team members</li>
+									<li>
+										Gathered requirements and collaborated with cross-functional
+										teams
+									</li>
+									<li>
+										Integrated frontend and backend components for seamless user
+										experience
+									</li>
 								</ul>
 							</div>
 							<div className="role-item">
@@ -217,14 +229,21 @@ const About = () => {
 										Alivee
 									</a>
 								</h4>
-								<p className="role-period">Jul 2023 - Aug 2024</p>
+								<p className="role-period">Jun 2023 - Jun 2024</p>
 								<ul className="role-description">
-									<li>Lead backend development for e-health solution</li>
-									<li>Data modeling and API development</li>
+									<li>Designed and built APIs for e-health platform</li>
 									<li>
-										Third-party service integration and system optimization
+										Created comprehensive data models for healthcare
+										applications
 									</li>
-									<li>Development operations and deployment management</li>
+									<li>
+										Integrated external services for enhanced system
+										functionality
+									</li>
+									<li>Optimized system performance and ensured scalability</li>
+									<li>
+										Managed deployment processes and development operations
+									</li>
 								</ul>
 							</div>
 							<div className="role-item">
@@ -236,15 +255,60 @@ const About = () => {
 										rel="noopener noreferrer"
 										className="link-highlight"
 									>
-										Alan Turing Codes
+										Alan Turing-Code
 									</a>
 								</h4>
-								<p className="role-period">Jan 2021 - Aug 2022</p>
+								<p className="role-period">Dec 2020 - Jul 2022</p>
+								<ul className="role-description">
+									<li>Developed robust backend systems and integrations</li>
+									<li>Ensured optimal system performance and reliability</li>
+									<li>Delivered complete web application solutions</li>
+									<li>Implemented seamless frontend-backend integration</li>
+								</ul>
+							</div>
+							<div className="role-item">
+								<h4>
+									Support Software Developer at{" "}
+									<a
+										href="https://waawfoundation.org/"
+										target="_blank"
+										rel="noopener noreferrer"
+										className="link-highlight"
+									>
+										WAAW Foundation
+									</a>
+								</h4>
+								<p className="role-period">Mar 2021 - Sep 2021</p>
+								<ul className="role-description">
+									<li>Developed and tested RESTful APIs</li>
+									<li>Built reusable custom software modules</li>
+									<li>
+										Transformed wireframes into fully functional responsive
+										websites
+									</li>
+									<li>Conducted thorough testing of developed applications</li>
+								</ul>
+							</div>
+							<div className="role-item">
+								<h4>
+									Chrome Extension Developer at{" "}
+									<span className="link-highlight">
+										Esty Business Solutions
+									</span>
+								</h4>
+								<p className="role-period">Jan 2019 - Oct 2020</p>
 								<ul className="role-description">
 									<li>
-										Full-stack development with focus on backend and integration
+										Developed custom Chrome extension for business automation
 									</li>
-									<li>System performance optimization</li>
+									<li>
+										Automated sorting and bulk printing processes for utility
+										bill operations
+									</li>
+									<li>
+										Successfully deployed solution for small-scale business
+										operations
+									</li>
 								</ul>
 							</div>
 						</div>

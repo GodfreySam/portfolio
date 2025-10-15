@@ -1,5 +1,5 @@
 import { AnimatePresence, motion } from "framer-motion";
-import React, { useState } from "react";
+import { useState } from "react";
 import { FaCode, FaExternalLinkAlt, FaServer } from "react-icons/fa";
 
 const Work = () => {
@@ -8,33 +8,29 @@ const Work = () => {
 	const projects = [
 		{
 			id: 1,
-			title: "WorkDey",
+			title: "Safegeeg (formerly Workdey)",
 			description:
-				"Lead Software Engineer and Business Partner focusing on strategic technical direction, architectural decisions, and engineering best practices. Implementing CI/CD pipelines and ensuring system scalability for a digital marketplace platform.",
+				"Lead Backend Engineer and Business Partner focusing on strategic technical direction, backend architecture, and engineering best practices. Implementing CI/CD pipelines, establishing engineering standards, and ensuring system scalability for a digital marketplace platform.",
 			category: "leadership",
 			technologies: [
 				"System Architecture",
+				"Backend Engineering",
+				"Technical Strategy",
 				"CI/CD",
 				"DevOps",
-				"Web3",
-				"OpenAI",
-				"Blockchain",
 				"Node.js",
 				"React",
-				"Typescript",
+				"TypeScript",
 				"MongoDB",
 				"Express",
-				"Redux",
-				"Firebase",
-				"Webpack",
-				"Babel",
 				"Cloud Services",
 				"Team Leadership",
+				"API Development",
 			],
 			github: "https://github.com/GodfreySam",
-			live: "https://workdey.co",
+			live: "https://safegeeg.com",
 			type: "leadership",
-			period: "Oct 2024",
+			period: "Sep 2024 - Present",
 		},
 		{
 			id: 4,
@@ -63,16 +59,18 @@ const Work = () => {
 			id: 3,
 			title: "PPDC Projects",
 			description:
-				"Full-stack development role at Public and Private Development Centre, building and maintaining web applications with focus on multi-tenant architecture. Leading development of Boomerang HR, Gwapp, and Amebo platforms.",
+				"Software Developer at Public and Private Development Centre, building and maintaining web applications with focus on backend architecture and multi-tenant systems. Led development of Boomerang HR, Gwapp, and Amebo platforms.",
 			category: "fullstack",
 			technologies: [
 				"React",
 				"Node.js",
-				"System Design",
+				"Backend Architecture",
+				"Multi-tenant Architecture",
 				"MongoDB",
 				"Express",
 				"Redux",
 				"API Development",
+				"System Design",
 			],
 			projects: [
 				{
@@ -92,7 +90,7 @@ const Work = () => {
 				},
 			],
 			type: "fullstack",
-			period: "Sep 2022 - May 2025",
+			period: "Aug 2022 - Apr 2025",
 		},
 		{
 			id: 5,
@@ -119,19 +117,72 @@ const Work = () => {
 			id: 2,
 			title: "Alivee",
 			description:
-				"Lead Backend Developer for an innovative e-health solution. Responsible for data modeling, API development, third-party service integration, and system optimization. Managing development operations and deployment strategies.",
+				"Lead Backend Developer for an innovative e-health solution. Designed and built APIs for e-health platform, created comprehensive data models, integrated third-party services, and managed deployment strategies.",
 			category: "backend",
 			technologies: [
 				"Node.js",
 				"API Development",
+				"Data Modeling",
+				"Healthcare Systems",
 				"System Architecture",
 				"DevOps",
 				"Cloud Services",
+				"Third-party Integration",
 			],
 			github: "https://github.com/GodfreySam",
 			live: "https://alivee.co",
 			type: "backend",
-			period: "Jul 2023 - 2024",
+			period: "Jun 2023 - Jun 2024",
+		},
+		{
+			id: 6,
+			title: "Alan Turing-Code",
+			description:
+				"Full Stack Developer with backend specialization and system integration focus. Developed robust backend systems, ensured optimal performance, and implemented seamless frontend-backend integration.",
+			category: "fullstack",
+			technologies: [
+				"React",
+				"Node.js",
+				"Backend Development",
+				"System Integration",
+				"Performance Optimization",
+				"Full-Stack Solutions",
+			],
+			type: "fullstack",
+			period: "Dec 2020 - Jul 2022",
+		},
+		{
+			id: 7,
+			title: "WAAW Foundation",
+			description:
+				"Support Software Developer focused on API development and responsive web applications. Developed and tested RESTful APIs, built custom modules, and transformed wireframes into functional websites.",
+			category: "fullstack",
+			technologies: [
+				"REST API",
+				"React",
+				"Responsive Design",
+				"Testing",
+				"Custom Modules",
+				"Frontend Development",
+			],
+			type: "fullstack",
+			period: "Mar 2021 - Sep 2021",
+		},
+		{
+			id: 8,
+			title: "Esty Business Solutions",
+			description:
+				"Chrome Extension Developer creating custom automation solutions. Developed browser extension for business process automation, automated sorting and bulk printing operations for utility bill management.",
+			category: "frontend",
+			technologies: [
+				"Chrome Extension",
+				"JavaScript",
+				"Browser APIs",
+				"Process Automation",
+				"Business Solutions",
+			],
+			type: "frontend",
+			period: "Jan 2019 - Oct 2020",
 		},
 	];
 
@@ -140,6 +191,7 @@ const Work = () => {
 		{ id: "leadership", label: "Leadership", icon: <FaCode /> },
 		{ id: "fullstack", label: "Full Stack", icon: <FaCode /> },
 		{ id: "backend", label: "Backend", icon: <FaServer /> },
+		{ id: "frontend", label: "Frontend", icon: <FaCode /> },
 	];
 
 	const filteredProjects =

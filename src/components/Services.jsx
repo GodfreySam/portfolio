@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import React from "react";
 import {
 	FaCloud,
 	FaCode,
@@ -23,7 +22,7 @@ const Services = () => {
 			title: "Backend Development",
 			description:
 				"Developing robust server-side applications and RESTful APIs with Node.js and Python.",
-			skills: ["Node.js", "Python", "Express", "Django", "REST APIs"],
+			skills: ["Node.js", "Python", "Express", "Flask", "FastAPI", "REST APIs"],
 		},
 		{
 			icon: <FaMobile />,
