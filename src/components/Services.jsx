@@ -22,7 +22,7 @@ const Services = () => {
 			title: "Backend Development",
 			description:
 				"Developing robust server-side applications and RESTful APIs with Node.js and Python.",
-			skills: ["Node.js", "Python", "Express", "Flask", "FastAPI", "REST APIs"],
+			skills: ["Node.js", "Python", "Express", "Flask", "FastAPI", "Django", "REST APIs"],
 		},
 		{
 			icon: <FaMobile />,
@@ -55,7 +55,7 @@ const Services = () => {
 			title: "Cloud Solutions",
 			description:
 				"Deploying and managing applications on cloud platforms with best practices.",
-			skills: ["AWS", "Azure", "Docker", "Kubernetes", "CI/CD"],
+			skills: ["GCP", "AWS", "Azure", "Docker", "Kubernetes", "CI/CD"],
 		},
 		{
 			icon: <FaTools />,
