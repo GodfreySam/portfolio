@@ -26,7 +26,7 @@ const Hero = () => {
 					</motion.div>
 					<div className="hero-image-container">
 						<motion.img
-							src="/images/frey.png"
+							src="/images/Frey_Pegs.JPG"
 							alt="Godfrey Samuel"
 							className="hero-image"
 							initial={{ opacity: 0, scale: 0.8 }}

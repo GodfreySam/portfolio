@@ -1,5 +1,4 @@
 import { AnimatePresence, motion } from "framer-motion";
-import React from "react";
 import {
 	FaBriefcase,
 	FaCode,
@@ -124,12 +123,10 @@ const Sidebar = ({ isMobile, isOpen, onClose }) => {
 					left: 0;
 					height: 100vh;
 					width: 280px;
-					background: linear-gradient(
-						135deg,
-						var(--background) 0%,
-						var(--background-light) 100%
-					);
-					box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+					background: rgba(255, 255, 255, 0.98);
+					backdrop-filter: blur(10px);
+					border-right: 1px solid rgba(37, 99, 235, 0.1);
+					box-shadow: 4px 0 20px rgba(0, 0, 0, 0.15);
 					z-index: 1000;
 					overflow-y: auto;
 					scrollbar-width: thin;
@@ -160,7 +157,7 @@ const Sidebar = ({ isMobile, isOpen, onClose }) => {
 					text-align: center;
 					margin-bottom: var(--spacing-xl);
 					padding-bottom: var(--spacing-lg);
-					border-bottom: 1px solid rgba(var(--primary-rgb), 0.1);
+					border-bottom: 1px solid rgba(37, 99, 235, 0.1);
 				}
 
 				.sidebar-title {
@@ -207,7 +204,7 @@ const Sidebar = ({ isMobile, isOpen, onClose }) => {
 				}
 
 				.nav-link:hover {
-					background: rgba(var(--primary-rgb), 0.1);
+					background: rgba(37, 99, 235, 0.1);
 					color: var(--primary);
 				}
 
@@ -219,7 +216,7 @@ const Sidebar = ({ isMobile, isOpen, onClose }) => {
 					height: 2.5rem;
 					margin-right: var(--spacing-sm);
 					font-size: 1.3rem;
-					background: rgba(var(--primary-rgb), 0.1);
+					background: rgba(37, 99, 235, 0.1);
 					border-radius: 0.75rem;
 					color: var(--primary);
 				}
@@ -231,7 +228,7 @@ const Sidebar = ({ isMobile, isOpen, onClose }) => {
 				.sidebar-footer {
 					margin-top: auto;
 					padding-top: var(--spacing-lg);
-					border-top: 1px solid rgba(var(--primary-rgb), 0.1);
+					border-top: 1px solid rgba(37, 99, 235, 0.1);
 				}
 
 				.social-links {
@@ -275,6 +272,8 @@ const Sidebar = ({ isMobile, isOpen, onClose }) => {
 					.sidebar {
 						width: 100%;
 						max-width: 320px;
+						background: rgba(255, 255, 255, 0.99);
+						backdrop-filter: blur(15px);
 					}
 
 					.sidebar-title {
