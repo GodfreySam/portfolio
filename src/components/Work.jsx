@@ -7,6 +7,28 @@ const Work = () => {
 
 	const projects = [
 		{
+			id: 0,
+			title: "Urbanwish",
+			description:
+				"Consulting CTO leading critical technical decisions, system design, and architecture. Driving cloud solution strategies and implementing workflow automation using GitHub Actions to streamline development processes and optimize deployment pipelines.",
+			category: "leadership",
+			technologies: [
+				"Technical Strategy",
+				"System Architecture",
+				"Cloud Solutions",
+				"GitHub Actions",
+				"Workflow Automation",
+				"CI/CD",
+				"DevOps",
+				"Technical Leadership",
+				"Infrastructure Design",
+			],
+			github: "https://github.com/GodfreySam",
+			live: "https://urbanwish.com",
+			type: "leadership",
+			period: "Jul 2025 - Present",
+		},
+		{
 			id: 1,
 			title: "Safegeeg (formerly Workdey)",
 			description:

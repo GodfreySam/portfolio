@@ -141,7 +141,42 @@ const About = () => {
 
 					<motion.div className="about-experience" variants={fadeInUp}>
 						<div className="experience-card">
-							<h3>Current Role</h3>
+							<h3>Current Roles</h3>
+							<div className="role-item">
+								<h4>
+									Consulting CTO at{" "}
+									<a
+										href="https://urbanwish.com"
+										target="_blank"
+										rel="noopener noreferrer"
+										className="link-highlight"
+									>
+										Urbanwish
+									</a>
+								</h4>
+								<p className="role-period">Jul 2025 - Present</p>
+								<ul className="role-description">
+									<li>
+										Lead critical technical decisions and strategic technology
+										direction
+									</li>
+									<li>
+										Design and architect scalable system infrastructure and
+										solutions
+									</li>
+									<li>
+										Drive cloud solution strategies for optimal performance and
+										cost efficiency
+									</li>
+									<li>
+										Implement workflow automation using GitHub Actions to
+										streamline development processes
+									</li>
+									<li>
+										Optimize deployment pipelines and DevOps practices
+									</li>
+								</ul>
+							</div>
 							<div className="role-item">
 								<h4>
 									Lead Backend Engineer at{" "}
