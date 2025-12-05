@@ -254,10 +254,10 @@ const Work = () => {
 					<span className="section-tag">Experience</span>
 					<h2 className="section-title">Professional Journey</h2>
 					<p className="section-description">
-						Over five years of experience in software development, leading teams
-						and delivering scalable solutions across various industries. From
-						full-stack development to technical leadership, each project
-						represents a unique challenge and learning opportunity.
+						Extensive experience as a Fullstack Engineer with proven expertise in
+						frontend and backend technologies and cloud infrastructure. Leading
+						teams and delivering scalable solutions across various industries,
+						each project represents a unique challenge and learning opportunity.
 					</p>
 				</motion.div>
 

@@ -28,3 +28,7 @@ yarn-error.log*
 
 # OS
 Thumbs.db
+
+# Resume and Profile Documents
+RESUME.md
+LINKEDIN_PROFILE.md

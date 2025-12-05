@@ -102,17 +102,16 @@ const About = () => {
 					<motion.div className="about-text" variants={fadeInUp}>
 						<p className="lead">
 							<strong>Godfrey Samuel</strong> is a highly motivated and
-							results-oriented Lead Backend Engineer with over five years of
-							professional experience, passionately driven by technology and
-							innovation.
+							results-oriented Fullstack Engineer with extensive professional
+							experience, passionately driven by technology and innovation.
 						</p>
 						<p>
-							Proven expertise in backend architecture, system design, and
-							technical leadership, consistently delivering scalable and robust
-							applications for industry-leading businesses and enterprises
-							across local and international markets. Known for strategic
-							technical direction and collaborative leadership in
-							cross-functional team environments.
+							Proven expertise in frontend and backend technologies, cloud
+							infrastructure, system design, and technical leadership,
+							consistently delivering scalable and robust applications for
+							industry-leading businesses and enterprises across local and
+							international markets. Known for strategic technical direction and
+							collaborative leadership in cross-functional team environments.
 						</p>
 						<div className="contact-info">
 							{contactInfo.map((info) => (
