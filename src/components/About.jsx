@@ -101,17 +101,20 @@ const About = () => {
 				>
 					<motion.div className="about-text" variants={fadeInUp}>
 						<p className="lead">
-							<strong>Godfrey Samuel</strong> is a highly motivated and
-							results-oriented Fullstack Engineer with extensive professional
-							experience, passionately driven by technology and innovation.
+							<strong>Godfrey Samuel</strong> is a Software Engineer with
+							extensive professional experience building end-to-end digital
+							solutions across fintech, ecommerce, logistics, healthcare, and
+							government sectors.
 						</p>
 						<p>
-							Proven expertise in frontend and backend technologies, cloud
-							infrastructure, system design, and technical leadership,
-							consistently delivering scalable and robust applications for
-							industry-leading businesses and enterprises across local and
-							international markets. Known for strategic technical direction and
-							collaborative leadership in cross-functional team environments.
+							Expert in designing scalable APIs, implementing multi-tenant
+							architectures, and driving digital transformation initiatives.
+							Combines deep technical proficiency in modern frontend frameworks
+							with advanced backend system design to deliver high-performance,
+							production-ready applications. Proven track record leading
+							engineering teams, establishing best practices, and architecting
+							robust solutions serving thousands of users across local and
+							international markets.
 						</p>
 						<div className="contact-info">
 							{contactInfo.map((info) => (
@@ -156,29 +159,30 @@ const About = () => {
 								<p className="role-period">Jul 2025 - Present</p>
 								<ul className="role-description">
 									<li>
-										Lead critical technical decisions and strategic technology
-										direction
+										Lead technical strategy for multi-provider booking platform
+										serving lifestyle and urban services across Nigeria
 									</li>
 									<li>
-										Design and architect scalable system infrastructure and
-										solutions
+										Architected full-stack infrastructure supporting over 500
+										service providers with dedicated business dashboards
 									</li>
 									<li>
-										Drive cloud solution strategies for optimal performance and
-										cost efficiency
+										Designed booking management system handling 10,000+ bookings
+										per month with real-time availability tracking
 									</li>
 									<li>
-										Implement workflow automation using GitHub Actions to
-										streamline development processes
+										Implemented workflow automation using GitHub Actions,
+										reducing deployment time by 80%
 									</li>
 									<li>
-										Optimize deployment pipelines and DevOps practices
+										Optimized cloud infrastructure on GCP, achieving 50% cost
+										reduction while maintaining 99% uptime
 									</li>
 								</ul>
 							</div>
 							<div className="role-item">
 								<h4>
-									Lead Backend Engineer at{" "}
+									Lead Backend Engineer & Founding Engineer at{" "}
 									<a
 										href="https://safegeeg.com"
 										target="_blank"
@@ -191,24 +195,25 @@ const About = () => {
 								<p className="role-period">Sep 2024 - Present</p>
 								<ul className="role-description">
 									<li>
-										Develop and implement strategic technical direction aligned
-										with organizational goals
+										Led complete platform migration from Firebase to
+										MongoDB+Node.js architecture with zero data loss and zero
+										downtime
 									</li>
 									<li>
-										Design and guide architectural decisions for scalable
-										backend systems
+										Architected full-stack fintech platform with escrow system
+										supporting multi-currency transactions (NGN, USD, USDT/USDC)
 									</li>
 									<li>
-										Establish and enforce engineering best practices across
-										development teams
+										Built transaction state machine tracking multi-currency
+										transactions with zero financial discrepancies
 									</li>
 									<li>
-										Make critical technical decisions balancing performance,
-										scalability, and maintainability
+										Designed gateway-agnostic payment abstraction layer,
+										reducing integration time from 4 weeks to 3 days
 									</li>
 									<li>
-										Design and implement CI/CD pipeline architecture and
-										deployment strategies
+										Resolved critical production incidents within 2 hours by
+										implementing Redis-based idempotency layer
 									</li>
 								</ul>
 							</div>
@@ -231,73 +236,25 @@ const About = () => {
 								<p className="role-period">Aug 2022 - Apr 2025</p>
 								<ul className="role-description">
 									<li>
-										Built and maintained complete web applications with focus on
-										backend architecture
+										Built and maintained four full-stack web applications serving
+										over 10,000 daily users
 									</li>
 									<li>
-										Implemented scalable multi-tenant systems supporting
-										multiple clients
+										Implemented scalable MVP multi-tenant architecture supporting
+										1,000 concurrent clients
 									</li>
 									<li>
-										Designed and developed scalable REST APIs and data models
+										Designed RESTful APIs handling over 15,000 requests per day
+										with 200ms average response time
 									</li>
 									<li>
-										Gathered requirements and collaborated with cross-functional
-										teams
+										Optimized database queries, achieving 266x performance
+										improvement through strategic indexing
 									</li>
 									<li>
-										Integrated frontend and backend components for seamless user
-										experience
+										Delivered Boomerang HR, Gwapp (Financial Management), and
+										Amebo (Project Management) systems
 									</li>
-								</ul>
-							</div>
-							<div className="role-item">
-								<h4>
-									Lead Backend Developer at{" "}
-									<a
-										href="https://alivee.co"
-										target="_blank"
-										rel="noopener noreferrer"
-										className="link-highlight"
-									>
-										Alivee
-									</a>
-								</h4>
-								<p className="role-period">Jun 2023 - Jun 2024</p>
-								<ul className="role-description">
-									<li>Designed and built APIs for e-health platform</li>
-									<li>
-										Created comprehensive data models for healthcare
-										applications
-									</li>
-									<li>
-										Integrated external services for enhanced system
-										functionality
-									</li>
-									<li>Optimized system performance and ensured scalability</li>
-									<li>
-										Managed deployment processes and development operations
-									</li>
-								</ul>
-							</div>
-							<div className="role-item">
-								<h4>
-									Full Stack Developer at{" "}
-									<a
-										href="https://www.alanturingcodes.com/"
-										target="_blank"
-										rel="noopener noreferrer"
-										className="link-highlight"
-									>
-										Alan Turing-Code
-									</a>
-								</h4>
-								<p className="role-period">Dec 2020 - Jul 2022</p>
-								<ul className="role-description">
-									<li>Developed robust backend systems and integrations</li>
-									<li>Ensured optimal system performance and reliability</li>
-									<li>Delivered complete web application solutions</li>
-									<li>Implemented seamless frontend-backend integration</li>
 								</ul>
 							</div>
 							<div className="role-item">
@@ -312,15 +269,24 @@ const About = () => {
 										WAAW Foundation
 									</a>
 								</h4>
-								<p className="role-period">Mar 2021 - Sep 2021</p>
+								<p className="role-period">Mar 2021 - Apr 2022</p>
 								<ul className="role-description">
-									<li>Developed and tested RESTful APIs</li>
-									<li>Built reusable custom software modules</li>
+									<li>
+										Developed and tested RESTful APIs supporting educational
+										programs reaching 100+ beneficiaries
+									</li>
+									<li>
+										Built reusable custom software modules, reducing development
+										time across projects
+									</li>
 									<li>
 										Transformed wireframes into fully functional responsive
-										websites
+										websites with mobile accessibility
 									</li>
-									<li>Conducted thorough testing of developed applications</li>
+									<li>
+										Achieved 90% code coverage and 99% bug detection rate before
+										production
+									</li>
 								</ul>
 							</div>
 							<div className="role-item">
@@ -333,15 +299,16 @@ const About = () => {
 								<p className="role-period">Jan 2019 - Oct 2020</p>
 								<ul className="role-description">
 									<li>
-										Developed custom Chrome extension for business automation
+										Developed custom Chrome extension automating utility bill
+										operations, reducing processing time by 100%
 									</li>
 									<li>
-										Automated sorting and bulk printing processes for utility
-										bill operations
+										Automated sorting and bulk printing processes handling 500
+										bills per day with 100% accuracy
 									</li>
 									<li>
-										Successfully deployed solution for small-scale business
-										operations
+										Successfully deployed solution improving operational
+										efficiency by 100%
 									</li>
 								</ul>
 							</div>

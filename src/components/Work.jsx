@@ -10,18 +10,18 @@ const Work = () => {
 			id: 0,
 			title: "Urbanwish",
 			description:
-				"Consulting CTO leading critical technical decisions, system design, and architecture. Driving cloud solution strategies and implementing workflow automation using GitHub Actions to streamline development processes and optimize deployment pipelines.",
+				"Consulting CTO leading technical strategy for multi-provider booking platform serving lifestyle and urban services across Nigeria. Architected full-stack infrastructure supporting 500+ service providers and 10,000+ monthly bookings. Implemented workflow automation reducing deployment time by 80% and optimized GCP infrastructure achieving 50% cost reduction.",
 			category: "leadership",
 			technologies: [
 				"Technical Strategy",
 				"System Architecture",
-				"Cloud Solutions",
+				"Cloud Solutions (GCP)",
 				"GitHub Actions",
 				"Workflow Automation",
 				"CI/CD",
 				"DevOps",
-				"Technical Leadership",
-				"Infrastructure Design",
+				"Multi-provider Platform",
+				"Real-time Systems",
 			],
 			github: "https://github.com/GodfreySam",
 			live: "https://urbanwish.com",
@@ -32,22 +32,21 @@ const Work = () => {
 			id: 1,
 			title: "Safegeeg (formerly Workdey)",
 			description:
-				"Lead Backend Engineer and Business Partner focusing on strategic technical direction, backend architecture, and engineering best practices. Implementing CI/CD pipelines, establishing engineering standards, and ensuring system scalability for a digital marketplace platform.",
+				"Lead Backend Engineer & Founding Engineer architecting full-stack fintech platform from the ground up. Led zero-downtime migration from Firebase to MongoDB+Node.js, enabling platform to scale from struggling marketplace to handling thousands of multi-currency transactions (NGN, USD, USDT/USDC). Built escrow system with zero financial discrepancies and designed gateway-agnostic payment abstraction reducing integration time from 4 weeks to 3 days.",
 			category: "leadership",
 			technologies: [
-				"System Architecture",
-				"Backend Engineering",
-				"Technical Strategy",
-				"CI/CD",
-				"DevOps",
 				"Node.js",
 				"React",
 				"TypeScript",
 				"MongoDB",
-				"Express",
-				"Cloud Services",
-				"Team Leadership",
-				"API Development",
+				"Redis",
+				"Firebase",
+				"Multi-currency",
+				"Cryptocurrency (USDT/USDC)",
+				"Payment Gateways",
+				"Escrow Systems",
+				"CI/CD",
+				"WebSocket",
 			],
 			github: "https://github.com/GodfreySam",
 			live: "https://safegeeg.com",
@@ -81,18 +80,18 @@ const Work = () => {
 			id: 3,
 			title: "PPDC Projects",
 			description:
-				"Software Developer at Public and Private Development Centre, building and maintaining web applications with focus on backend architecture and multi-tenant systems. Led development of Boomerang HR, Gwapp, and Amebo platforms.",
+				"Software Developer at Public and Private Development Centre, building and maintaining four full-stack web applications serving over 10,000 daily users. Implemented scalable MVP multi-tenant architecture supporting 1,000 concurrent clients. Designed RESTful APIs handling 15,000+ requests per day with 200ms average response time. Achieved 266x performance improvement through strategic database indexing.",
 			category: "fullstack",
 			technologies: [
 				"React",
 				"Node.js",
-				"Backend Architecture",
+				"Full-Stack Development",
 				"Multi-tenant Architecture",
 				"MongoDB",
 				"Express",
 				"Redux",
 				"API Development",
-				"System Design",
+				"Performance Optimization",
 			],
 			projects: [
 				{
@@ -136,65 +135,29 @@ const Work = () => {
 			period: "Sep 2022 - May 2025",
 		},
 		{
-			id: 2,
-			title: "Alivee",
-			description:
-				"Lead Backend Developer for an innovative e-health solution. Designed and built APIs for e-health platform, created comprehensive data models, integrated third-party services, and managed deployment strategies.",
-			category: "backend",
-			technologies: [
-				"Node.js",
-				"API Development",
-				"Data Modeling",
-				"Healthcare Systems",
-				"System Architecture",
-				"DevOps",
-				"Cloud Services",
-				"Third-party Integration",
-			],
-			github: "https://github.com/GodfreySam",
-			live: "https://alivee.co",
-			type: "backend",
-			period: "Jun 2023 - Jun 2024",
-		},
-		{
-			id: 6,
-			title: "Alan Turing-Code",
-			description:
-				"Full Stack Developer with backend specialization and system integration focus. Developed robust backend systems, ensured optimal performance, and implemented seamless frontend-backend integration.",
-			category: "fullstack",
-			technologies: [
-				"React",
-				"Node.js",
-				"Backend Development",
-				"System Integration",
-				"Performance Optimization",
-				"Full-Stack Solutions",
-			],
-			type: "fullstack",
-			period: "Dec 2020 - Jul 2022",
-		},
-		{
 			id: 7,
 			title: "WAAW Foundation",
 			description:
-				"Support Software Developer focused on API development and responsive web applications. Developed and tested RESTful APIs, built custom modules, and transformed wireframes into functional websites.",
+				"Support Software Developer focused on API development and responsive web applications supporting educational programs reaching 100+ beneficiaries. Developed and tested RESTful APIs, built reusable custom modules reducing development time, and transformed wireframes into functional responsive websites. Achieved 90% code coverage and 99% bug detection rate before production.",
 			category: "fullstack",
 			technologies: [
 				"REST API",
 				"React",
+				"Node.js",
+				"Postman",
 				"Responsive Design",
 				"Testing",
 				"Custom Modules",
 				"Frontend Development",
 			],
 			type: "fullstack",
-			period: "Mar 2021 - Sep 2021",
+			period: "Mar 2021 - Apr 2022",
 		},
 		{
 			id: 8,
 			title: "Esty Business Solutions",
 			description:
-				"Chrome Extension Developer creating custom automation solutions. Developed browser extension for business process automation, automated sorting and bulk printing operations for utility bill management.",
+				"Chrome Extension Developer creating custom automation solutions. Developed browser extension automating utility bill operations, reducing processing time by 100%. Automated sorting and bulk printing processes handling 500 bills per day with 100% accuracy, successfully improving operational efficiency by 100%.",
 			category: "frontend",
 			technologies: [
 				"Chrome Extension",
@@ -254,10 +217,12 @@ const Work = () => {
 					<span className="section-tag">Experience</span>
 					<h2 className="section-title">Professional Journey</h2>
 					<p className="section-description">
-						Extensive experience as a Fullstack Engineer with proven expertise in
-						frontend and backend technologies and cloud infrastructure. Leading
-						teams and delivering scalable solutions across various industries,
-						each project represents a unique challenge and learning opportunity.
+						Software Engineer with extensive professional experience building
+						end-to-end digital solutions across fintech, ecommerce, logistics,
+						healthcare, and government sectors. Expert in designing scalable
+						APIs, implementing multi-tenant architectures, and driving digital
+						transformation initiatives. Proven track record leading engineering
+						teams and architecting robust solutions serving thousands of users.
 					</p>
 				</motion.div>
 
@@ -339,7 +304,9 @@ const Work = () => {
 												className="project-link"
 											>
 												<FaExternalLinkAlt />
-												<span>Live Demo</span>
+												<span>
+													{project.id === 8 ? "Request Demo" : "Live Demo"}
+												</span>
 											</a>
 										</div>
 									)}
