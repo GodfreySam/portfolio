@@ -32,7 +32,7 @@ const Work = () => {
 			id: 1,
 			title: "Safegeeg (formerly Workdey)",
 			description:
-				"Lead Backend Engineer & Founding Engineer architecting full-stack fintech platform from the ground up. Led zero-downtime migration from Firebase to MongoDB+Node.js, enabling platform to scale from struggling marketplace to handling thousands of multi-currency transactions (NGN, USD, USDT/USDC). Built escrow system with zero financial discrepancies and designed gateway-agnostic payment abstraction reducing integration time from 4 weeks to 3 days.",
+				"Lead Engineer architecting full-stack marketplace and fintech platform from the ground up. Led zero-downtime migration from Firebase to MongoDB+Node.js, enabling platform to scale from struggling marketplace to handling thousands of multi-currency transactions (NGN, USD, USDT/USDC). Built escrow system with zero financial discrepancies and designed gateway-agnostic payment abstraction reducing integration time from 4 weeks to 3 days.",
 			category: "leadership",
 			technologies: [
 				"Node.js",

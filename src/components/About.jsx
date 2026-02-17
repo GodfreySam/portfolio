@@ -182,7 +182,7 @@ const About = () => {
 							</div>
 							<div className="role-item">
 								<h4>
-									Lead Backend Engineer & Founding Engineer at{" "}
+									Lead Engineer at{" "}
 									<a
 										href="https://safegeeg.com"
 										target="_blank"
