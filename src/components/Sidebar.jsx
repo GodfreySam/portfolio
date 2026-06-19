@@ -55,7 +55,7 @@ const Sidebar = ({ isMobile, isOpen, onClose }) => {
 						<div className="sidebar-content">
 							<div className="sidebar-header">
 								<h1 className="sidebar-title">Godfrey Samuel</h1>
-								<p className="sidebar-subtitle">Software Developer</p>
+								<p className="sidebar-subtitle">Fullstack Engineer</p>
 							</div>
 
 							<nav className="sidebar-nav">

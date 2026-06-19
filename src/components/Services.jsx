@@ -3,6 +3,7 @@ import {
 	FaCloud,
 	FaCode,
 	FaDatabase,
+	FaExchangeAlt,
 	FaMobile,
 	FaServer,
 	FaTools,
@@ -14,28 +15,29 @@ const Services = () => {
 			icon: <FaCode />,
 			title: "Frontend Development",
 			description:
-				"Building modern, responsive user interfaces with React, Vue, and other cutting-edge technologies.",
-			skills: ["React", "Vue.js", "TypeScript", "Tailwind CSS", "Next.js"],
+				"Building modern, responsive user interfaces with React and Next.js, with a mobile-first approach and performance optimisation.",
+			skills: ["React", "Next.js", "TypeScript", "Redux", "HTML5", "CSS"],
 		},
 		{
 			icon: <FaServer />,
 			title: "Backend Development",
 			description:
-				"Developing robust server-side applications and RESTful APIs with Node.js and Python.",
-			skills: ["Node.js", "Python", "Express", "Flask", "FastAPI", "Django", "REST APIs"],
+				"Developing robust server-side applications, RESTful APIs, and microservices with Node.js, NestJS, and Python.",
+			skills: ["Node.js", "NestJS", "Express", "Python", "FastAPI", "Django", "REST APIs"],
 		},
 		{
 			icon: <FaMobile />,
 			title: "Mobile Development",
 			description:
 				"Creating cross-platform mobile applications using React Native and Flutter.",
-			skills: [
-				"React Native",
-				"Flutter",
-				"Mobile UI/UX",
-				"App Store",
-				"Play Store",
-			],
+			skills: ["React Native", "Flutter", "Mobile UI/UX", "App Store", "Play Store"],
+		},
+		{
+			icon: <FaExchangeAlt />,
+			title: "Fintech & Payment Systems",
+			description:
+				"Architecting secure multi-currency payment platforms, escrow systems, and gateway-agnostic payment abstractions supporting fiat and cryptocurrency.",
+			skills: ["Multi-currency (NGN/USD)", "USDT/USDC", "Escrow Systems", "Payment Gateways", "Exchange Rate Management"],
 		},
 		{
 			icon: <FaDatabase />,
@@ -99,9 +101,9 @@ const Services = () => {
 					<span className="section-tag">Services</span>
 					<h2 className="section-title">What I Do</h2>
 					<p className="section-description">
-						I offer a comprehensive range of development services to help bring
-						your ideas to life. From frontend to backend, mobile to cloud, I've
-						got you covered.
+						From scalable platforms and multi-tenant SaaS to cloud infrastructure
+						and technical leadership — I deliver production-ready solutions that
+						scale.
 					</p>
 				</motion.div>
 

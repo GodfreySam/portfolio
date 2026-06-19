@@ -7,10 +7,30 @@ const Work = () => {
 
 	const projects = [
 		{
+			id: -1,
+			title: "Golborn",
+			description:
+				"Senior Platform Developer building secure digital platforms and infrastructure solutions for public sector institutions and government agencies across Nigeria. Developing citizen-facing portals, workflow and case management systems, and integrating legacy applications, ERP, identity services, and payment systems into unified digital experiences.",
+			category: "fullstack",
+			technologies: [
+				"GovTech",
+				"Platform Engineering",
+				"Systems Integration",
+				"Workflow Management",
+				"Secure Infrastructure",
+				"ERP Integration",
+				"Data Analytics",
+			],
+			github: "https://github.com/GodfreySam",
+			live: "https://golborn.com",
+			type: "fullstack",
+			period: "Present",
+		},
+		{
 			id: 0,
 			title: "Urbanwish",
 			description:
-				"Consulting CTO leading technical strategy for multi-provider booking platform serving lifestyle and urban services across Nigeria. Architected full-stack infrastructure supporting 500+ service providers and 10,000+ monthly bookings. Implemented workflow automation reducing deployment time by 80% and optimized GCP infrastructure achieving 50% cost reduction.",
+				"Tech Lead driving technical strategy for multi-provider booking platform serving lifestyle and urban services across Nigeria. Architected full-stack infrastructure supporting 500+ service providers and 10,000+ monthly bookings. Implemented workflow automation reducing deployment time by 80% and optimized GCP infrastructure achieving 50% cost reduction.",
 			category: "leadership",
 			technologies: [
 				"Technical Strategy",
@@ -51,7 +71,7 @@ const Work = () => {
 			github: "https://github.com/GodfreySam",
 			live: "https://safegeeg.com",
 			type: "leadership",
-			period: "Sep 2024 - Present",
+			period: "Sep 2024 - 2026",
 		},
 		{
 			id: 4,

@@ -103,8 +103,8 @@ const About = () => {
 						<p className="lead">
 							<strong>Godfrey Samuel</strong> is a Software Engineer with
 							extensive professional experience building end-to-end digital
-							solutions across fintech, ecommerce, logistics, healthcare, and
-							government sectors.
+							solutions across ecommerce, logistics, healthcare, government, and
+							enterprise sectors.
 						</p>
 						<p>
 							Expert in designing scalable APIs, implementing multi-tenant
@@ -146,7 +146,32 @@ const About = () => {
 							<h3>Current Roles</h3>
 							<div className="role-item">
 								<h4>
-									Consulting CTO at{" "}
+									Senior Platform Developer at{" "}
+									<a
+										href="https://golborn.com"
+										target="_blank"
+										rel="noopener noreferrer"
+										className="link-highlight"
+									>
+										Golborn
+									</a>
+								</h4>
+								<p className="role-period">Present · Abuja, Nigeria</p>
+								<ul className="role-description">
+									<li>
+										Building secure digital platforms and infrastructure solutions
+										for public sector institutions and government agencies
+									</li>
+									<li>
+										Developing citizen-facing portals, workflow management systems,
+										and systems integration connecting legacy applications, ERP,
+										identity services, and payment systems
+									</li>
+								</ul>
+							</div>
+							<div className="role-item">
+								<h4>
+									Tech Lead at{" "}
 									<a
 										href="https://urbanwish.com"
 										target="_blank"
@@ -192,7 +217,7 @@ const About = () => {
 										Safegeeg (formerly Workdey)
 									</a>
 								</h4>
-								<p className="role-period">Sep 2024 - Present</p>
+								<p className="role-period">Sep 2024 - 2026</p>
 								<ul className="role-description">
 									<li>
 										Led complete platform migration from Firebase to

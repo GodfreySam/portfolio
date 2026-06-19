@@ -16,13 +16,17 @@ const Hero = () => {
 							<span className="name">Godfrey Samuel</span>
 						</h1>
 						<h2 className="hero-subtitle">
-							Full Stack Engineer and Integration Specialist
+							Fullstack Engineer & System Architect
 						</h2>
 						<p className="hero-description">
-							Building scalable full stack applications and leading technical
-							strategy for modern applications with focus on system reliability
-							and performance.
+							Building scalable platforms, multi-tenant SaaS architectures, and
+							cloud infrastructure — with a focus on zero-downtime reliability,
+							system performance, and engineering teams that ship with confidence.
 						</p>
+						<div className="hero-actions">
+							<a href="#work" className="btn-primary">View My Work</a>
+							<a href="mailto:godfreysam09@gmail.com" className="btn-secondary">Get in Touch</a>
+						</div>
 					</motion.div>
 					<div className="hero-image-container">
 						<motion.img
@@ -149,10 +153,56 @@ const Hero = () => {
 					filter: contrast(1.1) brightness(1.05) blur(0.5px);
 				}
 
+				.hero-actions {
+					display: flex;
+					gap: 1rem;
+					flex-wrap: wrap;
+				}
+
+				.btn-primary {
+					display: inline-block;
+					padding: 0.9rem 2rem;
+					background: linear-gradient(to right, var(--primary), var(--accent));
+					color: white;
+					border-radius: 2rem;
+					font-size: 1.2rem;
+					font-weight: 600;
+					text-decoration: none;
+					transition: transform 0.2s ease, box-shadow 0.2s ease;
+					box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4);
+				}
+
+				.btn-primary:hover {
+					transform: translateY(-2px);
+					box-shadow: 0 6px 20px rgba(37, 99, 235, 0.5);
+				}
+
+				.btn-secondary {
+					display: inline-block;
+					padding: 0.9rem 2rem;
+					border: 2px solid var(--primary);
+					color: var(--primary);
+					border-radius: 2rem;
+					font-size: 1.2rem;
+					font-weight: 600;
+					text-decoration: none;
+					transition: all 0.2s ease;
+				}
+
+				.btn-secondary:hover {
+					background: var(--primary);
+					color: white;
+					transform: translateY(-2px);
+				}
+
 				@media (max-width: 768px) {
 					.hero-content {
 						grid-template-columns: 1fr;
 						text-align: center;
+					}
+
+					.hero-actions {
+						justify-content: center;
 					}
 
 					.hero-text {
