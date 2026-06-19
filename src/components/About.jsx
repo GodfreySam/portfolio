@@ -184,24 +184,21 @@ const About = () => {
 								<p className="role-period">Jul 2025 - Present</p>
 								<ul className="role-description">
 									<li>
-										Lead technical strategy for multi-provider booking platform
-										serving lifestyle and urban services across Nigeria
+										Leading technical strategy for a multi-provider booking
+										platform serving lifestyle and urban services across Nigeria
 									</li>
 									<li>
-										Architected full-stack infrastructure supporting over 500
-										service providers with dedicated business dashboards
+										Architected full-stack infrastructure capable of serving
+										thousands of providers with dedicated business dashboards
+										and handling high volumes of concurrent bookings
 									</li>
 									<li>
-										Designed booking management system handling 10,000+ bookings
-										per month with real-time availability tracking
+										Implemented workflow automation and CI/CD pipelines enabling
+										fast, reliable deployments with zero downtime
 									</li>
 									<li>
-										Implemented workflow automation using GitHub Actions,
-										reducing deployment time by 80%
-									</li>
-									<li>
-										Optimized cloud infrastructure on GCP, achieving 50% cost
-										reduction while maintaining 99% uptime
+										Optimized cloud infrastructure on GCP for cost efficiency
+										and high availability
 									</li>
 								</ul>
 							</div>

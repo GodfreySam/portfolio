@@ -30,7 +30,7 @@ const Work = () => {
 			id: 0,
 			title: "Urbanwish",
 			description:
-				"Tech Lead driving technical strategy for multi-provider booking platform serving lifestyle and urban services across Nigeria. Architected full-stack infrastructure supporting 500+ service providers and 10,000+ monthly bookings. Implemented workflow automation reducing deployment time by 80% and optimized GCP infrastructure achieving 50% cost reduction.",
+				"Tech Lead driving technical strategy for a multi-provider booking platform serving lifestyle and urban services across Nigeria. Architected full-stack infrastructure capable of serving thousands of providers with dedicated business dashboards and handling high volumes of concurrent bookings. Implemented workflow automation and CI/CD pipelines enabling fast, reliable deployments with zero downtime.",
 			category: "leadership",
 			technologies: [
 				"Technical Strategy",
