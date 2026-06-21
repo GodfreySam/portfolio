@@ -245,6 +245,39 @@ const About = () => {
 							<h3>Previous Experience</h3>
 							<div className="role-item">
 								<h4>
+									Senior Software Engineer at{" "}
+									<a
+										href="https://teasooconsulting.com"
+										target="_blank"
+										rel="noopener noreferrer"
+										className="link-highlight"
+									>
+										Teasoo Consulting
+									</a>
+								</h4>
+								<p className="role-period">Feb 2026 - May 2026</p>
+								<ul className="role-description">
+									<li>
+										Built{" "}
+										<a
+											href="https://esghorizon.africa"
+											target="_blank"
+											rel="noopener noreferrer"
+											className="link-highlight"
+										>
+											ESG Horizon Africa
+										</a>
+										, an Environmental, Social & Governance reporting and
+										analytics platform for African organizations
+									</li>
+									<li>
+										Developed features enabling organizations to track, report,
+										and benchmark ESG performance across sustainability metrics
+									</li>
+								</ul>
+							</div>
+							<div className="role-item">
+								<h4>
 									Software Developer at{" "}
 									<a
 										href="https://www.ppdc.org/"

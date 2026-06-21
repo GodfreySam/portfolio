@@ -27,6 +27,23 @@ const Work = () => {
 			period: "Present",
 		},
 		{
+			id: -2,
+			title: "ESG Horizon Africa",
+			description:
+				"Senior Software Engineer at Teasoo Consulting, building ESG Horizon Africa — an Environmental, Social & Governance reporting and analytics platform for African organizations. Developed features enabling institutions to track, report, and benchmark ESG performance across sustainability metrics.",
+			category: "fullstack",
+			technologies: [
+				"ESG Reporting",
+				"Data Analytics",
+				"Platform Engineering",
+				"Sustainability Tech",
+			],
+			github: "https://github.com/GodfreySam",
+			live: "https://esghorizon.africa",
+			type: "fullstack",
+			period: "Feb 2026 - May 2026",
+		},
+		{
 			id: 0,
 			title: "Urbanwish",
 			description:
